@@ -81,7 +81,7 @@ textarea
 }
 .wrapper
 {
-	background-image: url('night land terrain-01.png');
+	background-image: url('cute-space.jpg');
 	height: 600px;
 	width: 100%;
 	background-repeat: no-repeat;
@@ -773,7 +773,7 @@ padding-top: 40px;
 {
 
          text-align: center;
-         height: 400px;
+         /*height: 400px;*/
          padding: 2%;
         overflow: hidden;
 }

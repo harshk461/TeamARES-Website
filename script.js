@@ -74,7 +74,7 @@ console.log('here');
 
 
 document.addEventListener("DOMContentLoaded", function(event) { 
-setTimeout(function(){f('Design to Discover.');},1500);
+setTimeout(function(){f('ARES ROBOTICS.');},1500);
 /*setTimeout(function(){g('esign.')},5400);
 setTimeout(function(){f('iscover.')},8400);
 setTimeout(function(){g('iscover.')},11400);
@@ -83,8 +83,8 @@ setTimeout(function(){f('esign to Discover.')},14000);
 /*document.getElementById("mouseenter",arrowjump);*/
 
 setTimeout(function() {
-  if(document.getElementById("text").innerHTML!='Design to Discover.')
-document.getElementById("text").innerHTML = 'Design to Discover.';
+  if(document.getElementById("text").innerHTML!='ARES ROBOTICS.')
+document.getElementById("text").innerHTML = 'ARES ROBOTICS.';
 },22000);
   // body...
 var i = 0;
