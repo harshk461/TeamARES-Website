@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script type="text/javascript">
+		function displayEvents (json) {
+        var sheetData = json.feed.entry.filter(cellObj => cellObj.gs$cell.row!== "1");
+        var structured_data = [];
+        var name = sheetData.filter(cellObj => cellObj.gs$cell.col=== "2");
+        var department = sheetData.filter(cellObj => cellObj.gs$cell.col=== "3");
+        var graduation_Year = sheetData.filter(cellObj => cellObj.gs$cell.col=== "4");
+        var branch = sheetData.filter(cellObj => cellObj.gs$cell.col=== "5");
+        var competitions = sheetData.filter(cellObj => cellObj.gs$cell.col=== "6");
+        var join = sheetData.filter(cellObj => cellObj.gs$cell.col=== "7");
+        var poR = sheetData.filter(cellObj => cellObj.gs$cell.col=== "8");
+        var linkedIn = sheetData.filter(cellObj => cellObj.gs$cell.col=== "9");
+        var facebook = sheetData.filter(cellObj => cellObj.gs$cell.col=== "10");
+        var twitter  = sheetData.filter(cellObj => cellObj.gs$cell.col=== "11");
+        var portfolio = sheetData.filter(cellObj => cellObj.gs$cell.col=== "12");
+        var gitHub = sheetData.filter(cellObj => cellObj.gs$cell.col=== "13");
+        var profile = sheetData.filter(cellObj => cellObj.gs$cell.col=== "14");
+        for (var i = 0; i < name.length; i++) {
+          var y =i.toString(10);
+            structured_data.push({id:y,name: name[i].content.$t,department: department[i].content.$t,graduation_Year: graduation_Year[i].content.$t,competitions: competitions[i].content.$t,join:join[i].content.$t,branch: branch[i].content.$t});
+            if (poR[i]!=null) {
+              structured_data[i].poR = poR[i].content.$t;
+            }
+            else{
+            	structured_data[i].poR = "Not available";	
+            }
+            if (twitter[i]!=null) {
+              structured_data[i].twitter = twitter[i].content.$t;
+            }
+            else{
+            	structured_data[i].twitter = "Not available";
+            }
+            if (portfolio[i]!=null) {
+              structured_data[i].portfolio = portfolio[i].content.$t;
+            }
+            else{
+            	structured_data[i].portfolio = "Not available";
+            }
+            if (gitHub[i]!=null) {
+              structured_data[i].gitHub = gitHub[i].content.$t;
+            }
+            else{
+            	structured_data[i].gitHub = "Not available";
+            }
+            if (linkedIn[i]!=null) {
+              structured_data[i].linkedIn = linkedIn[i].content.$t;
+            }
+            else{
+            	structured_data[i].linkedIn = "Not available";
+            }
+            if (profile[i]!=null) {
+              structured_data[i].profile = profile[i].content.$t;
+            }
+            else{
+            	structured_data[i].profile = "Not available";
+            }
+            if (facebook[i]!=null) {
+              structured_data[i].facebook = facebook[i].content.$t;
+            }
+            else{
+            	structured_data[i].facebook = "Not available";
+            }
+        }
+
+        for (var i = 0; i < structured_data.length; i++) {
+          structured_data[i].profile = structured_data[i].profile.replace("open?", "uc?");
+          structured_data[i].poR = structured_data[i].poR.replace("null", "member");
+          structured_data[i].facebook = structured_data[i].facebook.replace("null", "#");
+          structured_data[i].linkedIn = structured_data[i].linkedIn.replace("null", "#");
+          structured_data[i].gitHub = structured_data[i].gitHub.replace("null", "#");
+          structured_data[i].portfolio = structured_data[i].portfolio.replace("null", "#");
+          structured_data[i].twitter = structured_data[i].twitter.replace("null", "#");
+        }
+
+        for (var i = 0 ; i < structured_data.length; i++) {
+          if (structured_data[i].competitions == "URC 2018 and ERC 2018" || structured_data[i].competitions == "URC 2018 and ERC 2018, URC 2019 and ERC 2019") {
+        	var x = document.createElement("div");
+        	x.classList.add("Teammemberover");
+          x.innerHTML = " <div class=\"Teammember container member"+structured_data[i].id+"\" onmouseover=\"mem1('member"+structured_data[i].id+"')\" onmouseleave =\"mem1out('member"+structured_data[i].id+"')\">   <img src=\""+structured_data[i].profile+"\" class=\"Teamimage\">    <p style=\"background-color:white; color: black;\" class=\"bottom\" >"+structured_data[i].name+"</p>    </div>  <div class=\"Teammember container1 member"+structured_data[i].id+"\" onmouseenter=\"mem1('member"+structured_data[i].id+"')\" onmouseleave =\"mem1out('member"+structured_data[i].id+"')\" style=\"display: none;\">    <p class=\"memdeshead\" style=\" text-align:center;\" ><b>"+structured_data[i].name+"</b><br><ul style=\"list-style-type: none; padding: 1vw; padding-top: 0vw; padding-bottom: 0vw; margin:1vw;\"><li style=\"display: inline; padding: 0.75vw; font-size: 1vw; color: white;\"><a style=\"color:white;\"href=\""+structured_data[i].facebook+"\"><i class=\"fa fa-facebook-square fa-3x\" aria-hidden=\"true\"></i></a></li><li style=\"display: inline; padding: 0.75vw; font-size: 1vw; color: white;\"><a style=\"color:white;\"href=\""+structured_data[i].twitter+"\"><i class=\"fa fa-twitter fa-3x\" aria-hidden=\"true\"></i></a></li><li style=\"display: inline; padding: 0.75vw; font-size: 1vw; color: white;\"><a style=\"color:white;\"href=\""+structured_data[i].gitHub+"\"><i class=\"fa fa-github fa-3x\" aria-hidden=\"true\"></i></a></li></ul><ul style=\"list-style-type: none; padding: 1vw; padding-top: 0vw; margin:1vw;\"><li style=\"display: inline; padding: 0.75vw; font-size: 1vw; color: white;\"><a style=\"color:white;\"href=\""+structured_data[i].linkedIn+"\"><i class=\"fa fa-linkedin fa-3x\" aria-hidden=\"true\"></i></a></li><li style=\"display: inline; padding: 0.75vw; font-size: 1vw; color: white;\"><a style=\"color:white;\"href=\""+structured_data[i].portfolio+"\"><i class=\"fa fa-user fa-3x\" aria-hidden=\"true\"></i></a></ul></div>  <div class=\"Teammember container1 member"+structured_data[i].id+"\" onmouseenter=\"mem2('member"+structured_data[i].id+"')\" onmouseleave =\"mem1out('member"+structured_data[i].id+"')\" style=\"display: none;\">  <p class=\"memdeshead\" style=\" text-align:center;\" ><b>"+structured_data[i].name+"</b><br> <p class=\"memdestext\" style=\"line-height: 1;\" >Hi, I'm "+structured_data[i].name+" from "+structured_data[i].branch+" of graduating year "+structured_data[i].graduation_Year+". I have been member of Ares from "+structured_data[i].join+" and worked with team to make Rover 2018. It's my pleasure that I working in "+structured_data[i].department+" department of Ares. I worked as "+structured_data[i].poR+" in Ares team and will love to work with my team till my graduating year.<p>   </div>";
+          var element = document.getElementsByClassName("Team");
+			element[0].appendChild(x);
+        }
+        }
+    }
+    fetch("https://spreadsheets.google.com/feeds/cells/1dd-XBDMQC7q96C0lWgSx4FCUttFD4lwfJdWAAhScTLI/1/public/values?alt=json")
+        .then(data => data.json())
+        .then(displayEvents);
+    var queryString = window.location.search;
+    var urlParams = new URLSearchParams(queryString);
+    var event = urlParams.get("event");
+	</script>
+
+
+	<title></title>
+<link href='home.css' rel='stylesheet'>
+<link href='style.css' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div style="position: fixed; width: 100%;">
+<div style="display: flex; background-color: black; width: 100%;">
+<ul type="none" style="text-align:left;padding:0px;margin: 0em; width: 100%;">
+  <li style="display: inline-block;padding:0px;padding-left:0.5vw; "><img src="img/ARES_LOGO - Copy.png" width="60vw" height="60vw"></li>
+</ul>
+  <ul type="none" class="links" style="margin-top: 1vw;padding-right:0.5em; text-align: right; width: 100%; margin-bottom: 0.1vw;">
+  <li style="display: inline-block;  padding: 5px; "><a href="index.html" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Home</a></li>
+  <li style="display: inline-block;  padding: 5px;"><a href="#rover1" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Rovers Descreption</a></li>
+  <li style="display: inline-block;  padding: 5px;"><a href="#rover2" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Achievments</a></li>
+  <li style="display: inline-block;  padding: 5px;"><a href="#rover3" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Our Team</a></li>
+  <li style="display: inline-block;  padding: 5px;"><a href="#rover4" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Contact Us</a></li>
+</ul>
+ <ul type="none" class="nav" style="margin: 1vw;padding-right:0.5em;" onclick="nav_open()">
+  <li style="display: inline-block; "><a  style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;"><img class="close" src="img/nav_logo.png" width="40vw" height="40vw"></a></li>
+</ul>
+</div>
+<div class="check">
+  <ul type="none" class="linking" style="margin: 0em; padding-left: 0em; display: none; align-self: flex-end; background-color: rgb(0,0,0,0.5); text-align: right; width: 100%;">
+  <li><a href="index.html" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Home</a></li>
+  <li><a href="#rover1" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Rovers Descreption</a></li>
+  <li><a href="#rover2" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Achievments</a></li>
+  <li><a href="#rover3" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Our Team</a></li>
+  <li><a href="#rover4" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Contact Us</a></li>
+  </ul>
+</div>
+</div>
+<div>
+	<h1 style="color: white; font-size: 10vw; padding: 15vw; text-align: center; margin: 0em;">Rover 2018</h1>
+</div>
+<div style="background: white; color: black; padding-top: 5vw;">
+	<div class="main" id="rover1">
+	<div class=" lap">
+		<ul class="sidepanel">
+			<li class="sidelist"><img src="img/img1.jpg" class="sideimage" onclick="main('image1')"></li>
+			<li class="sidelist"><img src="img/img2.jpg" class="sideimage" onclick="main('image2')"></li>
+			<li class="sidelist"><img src="img/img3.jpg" class="sideimage" onclick="main('image3')"></li>
+			<li class="sidelist"><img src="img/img4.jpg" class="sideimage" onclick="main('image4')"></li>
+			<li class="sidelist"><img src="img/img5.jpg" class="sideimage" onclick="main('image5')"></li>
+		</ul>
+	</div>
+	<div class=" lap">
+		<img src="img/img1.jpg" class="mainimage image1" style="display: block;">
+		<img src="img/img2.jpg" class="mainimage image2" style="display: none;">
+		<img src="img/img3.jpg" class="mainimage image3" style="display: none;">
+		<img src="img/img4.jpg" class="mainimage image4" style="display: none;">
+		<img src="img/img5.jpg" class="mainimage image5" style="display: none;">
+	</div>
+	<div class="mob">
+		<img src="img/img1.jpg" class="mainimage image.1" style="display: block;">
+		<img src="img/img2.jpg" class="mainimage image.2" style="display: none;">
+		<img src="img/img3.jpg" class="mainimage image.3" style="display: none;">
+		<img src="img/img4.jpg" class="mainimage image.4" style="display: none;">
+		<img src="img/img5.jpg" class="mainimage image.5" style="display: none;">
+	</div>
+	<div class="mob">
+		<ul class="sidepanel">
+			<li class="sidelist"><img src="img/img1.jpg" class="sideimage" onclick="main('image.1')"></li>
+			<li class="sidelist"><img src="img/img2.jpg" class="sideimage" onclick="main('image.2')"></li>
+			<li class="sidelist"><img src="img/img3.jpg" class="sideimage" onclick="main('image.3')"></li>
+			<li class="sidelist"><img src="img/img4.jpg" class="sideimage" onclick="main('image.4')"></li>
+			<li class="sidelist"><img src="img/img5.jpg" class="sideimage" onclick="main('image.5')"></li>
+		</ul>
+	</div>
+	<div class="dis">
+		<h1 class="description">OVERVIEW</h1>
+		<p class="description1">
+			Frankenstein (Kor. 프랑켄슈타인) is the deuteragonist of the series. He is Raizel's devoted servant and has loyally served him for over 820 years. He is a brilliant scientist, whose abandoned research notes helped to bring the Union's scientific knowledge and technology to the advanced level it has reached in the series. Frankenstein is also the founder and current principal of Ye Ran High School, where he is known to all as the Principal. He is now the latest addition to the RK-5 bearing the title of “Number 0”.
+		</p>
+		<h1 class="description">Appearence</h1>
+		<p class="description1">
+			Frankenstein, like his Master Raizel, is very handsome and elegant. He is tall and has shoulder-length silky blond hair, with bright blue eyes and a cheerful smile. When he becomes overly boisterous, his aura changes and he sports a sadistic grin with an equally sadistic personality to match. He is regularly dressed in formal attire but has been seen to switch to a more casual style when at home. He wears glasses when performing his duties as Chairman of the school and has also been seen wearing monocles during flashbacks of him carrying out his research work hundreds of years ago.
+		</p>
+	</div>
+</div>
+<div style="padding-bottom: 2vw;" id="rover2">
+	<ul class="product">
+		<li class="but clk1" onclick="info('info1','clk1')" style="box-shadow: none;">Descreption</li>
+		<li class="but clk2" onclick="info('info2','clk2')">Specifications</li>
+		<li class="but clk3" onclick="info('info3','clk3')">Achievements</li>
+	</ul>
+	<p style="display: block;" class="box info1">
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	</p>
+	<p style="display: none;" class="box info2">
+		It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+	</p>
+	<p style="display: none;" class="box info3">
+		Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+	</p>
+</div>
+</div>
+<h1 style="text-align: center; font-size: 4vw;">MEET OUR TEAM</h1>
+<div style="color: white;">
+	<div class="Team" id="rover3">
+	</div>
+</div>
+<footer id="rover4">
+      <div id="upperfooter" style="text-align: left; position: relative;">
+          <div id="upperfooter-one">
+            <div class="quicklinks">
+              <h5><a>Home</a></h5>
+              <h5><a href="team.html">About Us</a></h5>
+              <h5><a href="urc.html">About URC</a></h5>
+              <h5></h5>
+            <h5></h5>
+            </div>
+            <div class="quicklinks">
+              <h5></h5>
+              <h5><a href="gallery.html">Gallery</a></h5>
+              <h5><a href="sponsors.html">Our Sponsors</a></h5>
+              <h5><a href="whysponsorus.html">Sponsor Us</a></h5>
+            </div>
+
+              <div id="medialinks">
+              <a href="https://www.facebook.com/aresmarsrover/" class=''><img src='facebooklogo.png'></a>
+              <a href="https://www.youtube.com/channel/UCLKSVL4HznfNCShrEWSyu7A" class=''><img src='youtubelogo.png'></a>
+              <a href="https://www.linkedin.com/company/team-ares-robotics/" class=''><img src='linkedinlogo.png'></a>
+            </div>
+          </div>
+          <div id="upperfooter-middle">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faresmarsrover%2F&tabs=timeline&width=340&height=200&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="100%" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" id="fbplugin"></iframe>
+          </div>
+          <div id='upperfooter-two'>
+            <div>
+              <li>
+                <img src='envelope.png' alt='email logo'>
+                  <div>
+                      <h5>teamaresnsit@gmail.com</h5>
+                  </div>
+              </li>
+              <li>
+                <img src='phone.png' alt='mobile phone logo'>
+                  <div>
+                    <h5>Devansh Batra</h5>
+                    <h5>+91 - 8930485111</h5>
+                  </div>
+              </li>
+              <li>
+                <img src='phone.png' alt='mobile phone logo'>
+                  <div>
+                    <h5>Nishant Chahar</h5>
+                    <h5>+91 - 8130624192</h5>
+                  </div>
+              </li>
+
+              <li>
+                <img src='house.png' alt='address logo'>
+                  <div>
+                      <h5>ARES Robotics,
+                          Dwarka Sector-3, Dwarka, Delhi, 110078 - 576104</h5>
+                  </div>
+              </li>
+            </div>
+          </div>
+      </div>
+    </footer>
+    <div style="background-color: rgb(0,128,128); color: black; margin: 0em; padding: 0.5vw; text-align: center; font-size: 1.5vw;">
+  <p style=" font-family:Helvetica Neue;">Made by: <a style="color: white; text-decoration: underline;font-size: 1.75vw;" href="https://github.com/sourabh112/" target="_blank">Sourabh</a></p>
+</div>
+</body>
+<script type="text/javascript">
+  var t=0;
+  function nav_open () {
+    var x = window.matchMedia("(max-width: 1065px)")
+    var navi = document.getElementsByClassName("linking");
+    var navi1 = document.getElementsByClassName("close");
+    var navi2 = document.getElementsByClassName("check");
+    if (t%2==0) {
+    navi[0].style.display="block"
+    navi1[0].src="img/close.png";
+    t++;
+  }
+  else{
+    navi[0].style.display="none"
+    navi1[0].src="img/nav_logo.png";
+    t++;
+  }
+  }
+  function main(classname) {
+		var x = document.getElementsByClassName(classname)
+		var y = document.getElementsByClassName("mainimage")
+
+		for (var i = 0; i < y.length; i++) {
+			y[i].style.display="none";
+		}
+
+		x[0].style.display="block";
+	}
+	function info(classname,a) {
+		var x = document.getElementsByClassName(classname);
+		var y = document.getElementsByClassName("box");
+		var b = document.getElementsByClassName("but");
+		var z = document.getElementsByClassName(a);
+
+		for (var i = 0; i < y.length; i++) {
+			y[i].style.display="none";
+			b[i].style.boxShadow="0.4vw 0.8vw #888888";
+		}
+
+		x[0].style.display="block";
+		z[0].style.boxShadow="none";
+	}
+	var y;
+	function mem1(className) {
+  		var x = document.getElementsByClassName(className);
+    	x[1].style.display = "block";
+    	x[1].style.borderColor = "rgb(0,128,128)"
+    	x[0].style.display = "none";
+   		x[2].style.display = "none";
+
+    	y = setTimeout(mem2, 5000,className);
+		}
+	function mem1out(className) {
+  		var x = document.getElementsByClassName(className);
+    	x[0].style.display = "block";
+  		x[1].style.display = "none"
+    	x[2].style.display = "none";
+    	clearTimeout(y);		
+		}
+	function mem2(className) {
+  		var x = document.getElementsByClassName(className);
+    	x[1].style.display = "none";
+    	x[0].style.display = "none";
+   		x[2].style.display = "block";
+   		x[2].style.borderColor = "rgb(0,128,128)"
+    	y = setTimeout(mem1, 5000,className);
+		}
+</script>
+</html>
