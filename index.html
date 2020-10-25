@@ -1,367 +1,1188 @@
 <!DOCTYPE html>
-<html>
+<html lang="zxx">
+
 <head>
-<link rel="shortcut icon" href="img/ARES_LOGO - Copy.png">
-<title>Ares Robotics</title>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <!-- Title-->
+  <title>ARES Robotics</title>
+  <!-- Description-->
+  <meta name="description" content="Personal Portfolio Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <!-- Web fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&amp;display=swap" rel="stylesheet">
+  <!-- CSS vendors-->
+  <link rel="stylesheet" href="css/bootstrap-custom.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/tiny-slider.css">
+  <link rel="stylesheet" href="css/lity.min.css">
+  <link rel="stylesheet" href="css/simplebar.min.css">
+  <link rel="stylesheet" href="css/jquery.mb.YTPlayer.min.css">
+  <!-- Main CSS-->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- CSS Color scheme-->
+  <link id="color-scheme" rel="stylesheet" href="css/colors/main-darkgreen.css">
+  <!-- Custom CSS (Add your custom CSS styles to this file)-->
+  <link rel="stylesheet" href="css/custom.css">
 </head>
-<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
-<link href='tach.css' rel='stylesheet'>
-<link href='home.css' rel='stylesheet'>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<body style="margin: 0em;padding: 0em; background-image: url('img/8320.png');background-attachment: fixed;">
-<div style="position: fixed; width: 100%;">
-<div style="display: flex; background-color: black; width: 100%;">
-<ul type="none" style="text-align:left;padding:0px;margin: 0em ;width: 30%;">
-  <li style="display: inline-block;padding:0px;padding-left:0.5vw;"><img src="img/ARES_LOGO - Copy.png" width="60vw" height="60vw"></li>
-</ul>
-  <ul type="none" class="links" style="margin-top: 1vw;padding-right:0.5em;">
-  <li style="display: inline-block; "><a href="#home1" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">About Us</a></li>
-  <li style="display: inline-block;"><a href="#home2" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Our Sponsers</a></li>
-  <li style="display: inline-block;"><a href="#home3" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Our Rovers</a></li>
-  <li style="display: inline-block;"><a href="#home4" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Achievments</a></li>
-  <li style="display: inline-block;"><a href="#home5" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Our Team</a></li>
-  <li style="display: inline-block;"><a href="#home6" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Contact Us</a></li>
-</ul>
- <ul type="none" class="nav" style="margin: 1vw;padding-right:0.5em;" onclick="nav_open()">
-  <li style="display: inline-block; "><a  style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;"><img class="close" src="img/nav_logo.png" width="40vw" height="40vw"></a></li>
-</ul>
-</div>
-<div class="check">
-  <ul type="none" class="linking" style="margin: 0em; padding-left: 0em; display: none; align-self: flex-end; background-color: rgb(0,0,0,0.5);">
-  <li><a href="#home1" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">About Us</a></li>
-  <li><a href="#home2" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Our Sponsers</a></li>
-  <li><a href="#home3" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Our Rovers</a></li>
-  <li><a href="#home4" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Achievments</a></li>
-  <li><a href="#home5" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Our Team</a></li>
-  <li><a href="#home6" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Contact Us</a></li>
-  </ul>
-</div>
-</div>
-<img class="hero" src="img/hero.png" width="100%" height="90%">
-<div id="home1">
-  <h1 style="text-align: center;color: rgb(19 117 165); font-size: 3.5vw; font-family: 'Montserrat', Georgia, Serif; margin-bottom: 0.5em;margin-top: 0.5em;"><b>About Us</b></h1>
-  <h1 style="text-align: center;color: white; font-size: 1.75vw; font-family: 'Amatic SC'; margin-top: 0em;"><b>We Work Hard In Silence, Our Robots Makes Noises</b></h1>
-</div>
-<div class="homedesp">
-  <p class="hometextlap" style="padding-left: 7.5vw; margin-top: 2vw;font-family: 'Montserrat', Georgia, Serif; font-size: 1.25vw; color: white;">ARES Robotics is a team of students highly interested in 
-  Robotics and Artificial Intelligence motivated towards 
-  research and development in various fields of robotics. It is a 
-  multidisciplinary collaboration of undergraduate space 
-  aficionados of about 30 motivated students from the Netaji 
-  Subhas Institute of Technology, working tirelessly to 
-  formulate, design and fabricate a rover that can be put to use 
-  in early exploration of Mars. Robotics, being a 
-  multidisciplinary field requires knowledge of wide variety of 
-  subjects ranging from mechanical, electronics and 
-  embedded systems, control systems, computer vision and 
-  machine learning. Recently we were among the list of 
-  qualified teams for European Rover Challenge (ERC) with 
-  only 50 other teams selected and shortlisted globally.
-  Know more about .
-  </p>
-  <img class="homeimgdesp" src="img/team.png" width="45%" height="45%">
-  <p class="hometextmob" style="padding-left: 7.5vw; margin-top: 2vw;font-family: 'Montserrat', Georgia, Serif; font-size: 1.25vw; color: white;">ARES Robotics is a team of students highly interested in 
-  Robotics and Artificial Intelligence motivated towards 
-  research and development in various fields of robotics. It is a 
-  multidisciplinary collaboration of undergraduate space 
-  aficionados of about 30 motivated students from the Netaji 
-  Subhas Institute of Technology, working tirelessly to 
-  formulate, design and fabricate a rover that can be put to use 
-  in early exploration of Mars. Robotics, being a 
-  multidisciplinary field requires knowledge of wide variety of 
-  subjects ranging from mechanical, electronics and 
-  embedded systems, control systems, computer vision and 
-  machine learning. Recently we were among the list of 
-  qualified teams for European Rover Challenge (ERC) with 
-  only 50 other teams selected and shortlisted globally.
-  Know more about .
-  </p>
-</div>
-<div style="text-align: center; margin-top: 2vw;">
-  <img src="img/atom-moksha.jpg" width="25%" height="25%" style="padding: 1vw;">
-  <img src="img/erctemp.png" width="25%" height="25%" style="padding: 1vw;">  
-  <img src="img/rsz_rover.jpg" width="25%" height="25%" style="padding: 1vw;">
-  <br>
-  <div style="border-radius: 2em; border-width: 1em; background-color: blue; width: 15vw; text-align: center; align-self: center;margin-left: 45%;font-family: 'Amatic SC';font-size: 2vw; padding: 0.25vw; color: white;"><a href="gallery.html" style="color: white;">VIEW GALLERY</a></div>
-</div>
-<div style="width: 100%; background-color: white;">
-  <h1 style="text-align: center; color: rgb(19 117 165);font-family: 'Montserrat', Georgia, Serif;font-size: 3.5vw; margin-top: 2vw; padding-top: 4vw;"><b style="text-align: center; color: rgb(19 117 165);">Our Sponsors</b></h1>
-  <div style="text-align: center; margin-top: 2vw;">
-    <img src="img/sponsi1.jpg" width="25%" height="25%" style="padding: 1vw;">
-    <img src="img/sponsi2.jpg" width="25%" height="25%" style="padding: 1vw;">
-    <img src="img/sponsi3.png" width="15%" height="15%" style="padding: 1vw;">
-  </div>
-  <p id="home2" style="color: rgb(19 117 165); font-family: 'Montserrat', Georgia, Serif; text-align: center; font-size: 3.5vw; margin: 2vw;"><B>Be A Sponsor</B></p>
-  <div style="display: flex;  padding-right: 5vw;padding-left: 5vw;">
-  	<p style="color: black;font-size: 1.5vw; margin-bottom: 0em;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-<br><br>2 lines senti si as told by devansh sir. Since I'm not good at english so I'm writing this line as a place holder here.I think this length would be fine and good enough.
-</p>
-  </div> 	
-  <a href="ARES Sponsorship Brochure.pdf" target="_blank"><p style="text-align: center; font-size: 2.5vw" class="click"> CLICK HERE TO DOWNLOAD BROCHURE</p></a> 
-  <p style="color: rgb(19 117 165); font-family: 'Montserrat', Georgia, Serif; text-align: center; font-size: 3.5vw; margin: 2vw;"><B>Support us</B></p>
-  <div style="display: flex;  padding-right: 5vw;padding-left: 5vw;">
-  	<p style="color: black;font-size: 1.5vw; margin-bottom: 3em;">While we are extremely passionate about robotics, however as students our progress is severely hindered by a lack of funds. Building a rover from scratch is a tough and equally expensive task. With a large team of various disciplines teaming up to address several challenges, we require to build the rover's body, sophisticated communication systems, a rather precise robotic arm, stereo vision system and much more. The cost for such a project is insanely huge to be funded by a group of students like us. While we try and make the best of whatever resources we can aquire, we almost definitely cannot be successful without outside aid.
-
-We are looking for Sponsors and Donors alike. If you are interested in supporting a young enthusiastic team working hard to bring home a passion for robotics, please do reach out to us. You can also support us through our online fundraising campaign on Ketto.<a href="https://www.ketto.org/fundraiser/aresroboticsnsut?utm_source=internal&utm_medium=whatsappShare&utm_campaign=aresroboticsnsut&utm_content=652f3f041248406acca1ae1a9658ca38&shby=1" target="_blank"> <b class="click">CLICK HERE TO DONATE</b></a>
-</p> 
-    <img src="img/ketto.jpg" width="25%" height="30%" style="padding: 1vw;">
-  </div>
-</div>
-
-<div id="home3">
-  <h1 style="text-align: center; color: rgb(19 117 165);font-family: 'Montserrat', Georgia, Serif;font-size: 3.5vw;padding-top:0.5em;">Our Rovers</h1><br>
-    <p style="padding: 5vw;padding-top: 0em; font-size: 1.5vw; color: white;">
-    we are proud to tell you what we have achieved so far. Lorem Ipsum ...........
-  </p>
-  <p style="text-align: center; font-size: 1.5vw" class="click">CLICK ON ROVER IMAGES TO KNOW MORE</p>
-  <div>
-    <a href="2020.html"><div class="team1">
-  <div class="container" style="display: block; width:100%" >
-  <img class="imaging imag" src="img/atom-moksha.jpg" alt="Snow" width="100%">
-  <div class="centered" style="font-size: 1.3vw; text-align: center; text-transform: uppercase;"><b style="color:blue; font-size: 1.5vw; ">ATOM II</b> <br><hr> Built with ❤️ in 2020</div>
-</div>
-</div>
-</a>
-<div class="team2">
-  <a href="2019.html"><div class="container" style="display: block; width:100%" >
-  <img class="imaging imag" src="img/erctemp.png" alt="Snow" width="100%">
-  <div class="centered" style="font-size: 1.3vw; text-align: center; text-transform: uppercase;"><b style="color:blue; font-size: 1.3vw; ">ATOM I</b> <br><hr> Built with ❤️ in 2019</div>
-</div>
-</a>
-<a href="2018.html"><div class="container" style="display: block; width:100%" >
-  <img class="imaging imag" src="img/rsz_rover.jpg" alt="Snow" width="100%">
-  <div class="centered" style="font-size: 1.3vw; text-align: center; text-transform: uppercase;"><b style="color:blue; font-size: 1.3vw; ">ROVER 2018</b> <br><hr> Built with ❤️ in 2018</div>
-</div>
-</div>
-</a>
-  </div>
-</div>
-
-<div id="home4" style="background-color: white;">
-  <h1 style="text-align: center;font-family: 'Montserrat', Georgia, Serif;font-size: 3.5vw; margin: 0.5em; padding-top: 1vw;"><b style=" color: rgb(19 117 165);">Achievements</b></h1>
-  <p style="padding: 5vw;padding-top: 0em; font-size: 1.5vw;">
-    we are proud to tell you what we have achieved so far. Lorem Ipsum ...........
-  </p>
-  <div class="achieve">
-  <div class="container" style="display: block; width:100%" data-toggle="modal" data-target="#myModal1" >
-  <img class="imaging imag" src="img/rsz_rover.jpg" alt="Snow" width="100%">
-  <div class="centered" style="font-size: 1.3vw; text-align: center; text-transform: uppercase; color: black; "><b style="color:blue; font-size: 1.3vw; ">University Rover Challenge 2018</b> <br><hr> Cleared Pdr in First Attempt</div>
-</div>
-<div class="container" style="display: block; width:100%" data-toggle="modal" data-target="#myModal2">
-  <img class="imaging imag" src="img/erc.jpg" alt="Snow" width="100%">
-  <div class="centered" style="font-size: 1.3vw; text-align: center; text-transform: uppercase; color: black; "><b style="color:blue; font-size: 1.3vw; ">Europian Rover Challenge 2018</b> <br><hr> Qualified to represent NSUT</div>
-</div>
-  <div class="container" style="display: block; width:100%" data-toggle="modal" data-target="#myModal3">
-  <img class="imaging imag" src="img/urcSARTeam.jpg" alt="Snow" width="100%">
-  <div class="centered" style="font-size: 1.3vw; text-align: center; text-transform: uppercase; color: black; "><b style="color:blue; font-size: 1.3vw; ">University Rover Challenge 2019</b> <br><hr> Cleared Pdr and an impressive SAR score</div>
-</div>
-<div class="container" style="display: block; width:100%" data-toggle="modal" data-target="#myModal4">
-  <img class="imaging imag" src="img/erctemp.jpg" alt="Snow" width="100%">
-  <div class="centered" style="font-size: 1.3vw; text-align: center; text-transform: uppercase; color: black; "><b style="color:blue; font-size: 1.3vw; ">Europian Rover Challenge 2019</b> <br><hr> Invited for on-field finals</div>
-</div>
-  </div>
-<p style="color: white; font-family: 'Amatic SC'; text-align: center; font-size: 3vw;">Know More about our Achievements and future goals</p>
-</div>
-<div id="home5">
-  <h1 style="text-align: center; color: rgb(19 117 165);font-family: 'Montserrat', Georgia, Serif;font-size: 3.5vw;padding-top:0.5em;">Our Team</h1><br>
-  <div>
-    <div class="team1">
-  <div class="container" style="display: block; width:100%" >
-  <img class="imaging imag" src="img/team19.jpg" alt="Snow" width="100%">
-  <div class="centered" style="font-size: 1.3vw; text-align: center; text-transform: uppercase;"><b style="color:blue; font-size: 1.5vw; ">Our Current Team</b> <br><hr> Built with ❤️ <br><b>ATOM 2.0</b></div>
-</div>
-</div>
-
-<div class="team2">
-  <div class="container" style="display: block; width:100%" >
-  <img class="imaging imag" src="img/team.png" alt="Snow" width="100%">
-  <div class="centered" style="font-size: 1.3vw; text-align: center; text-transform: uppercase;"><b style="color:blue; font-size: 1.3vw; ">team behind 2019 rover</b> <br><hr> Built with ❤️ <br><b>ATOM 1.0</b></div>
-</div>
-<div class="container" style="display: block; width:100%" >
-  <img class="imaging imag" src="img/team18.jpg" alt="Snow" width="100%">
-  <div class="centered" style="font-size: 1.3vw; text-align: center; text-transform: uppercase;"><b style="color:blue; font-size: 1.3vw; ">team behind 2018 rover</b> <br><hr> Built with ❤️ <br><b>Mars rover prototype 2018</b></div>
-</div>
-</div>
-  </div>
-</div>
-
-
-<!-- Modals starts here -->
-
-<div class="modal fade" id="myModal1" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p style="color: black;">modal for rover 1.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
+<body class="theme-dark">
+  <!-- Preloader-->
+  <div class="preloader">
+    <div class="preloader-block">
+      <div class="preloader-icon"><span class="loading-dot loading-dot-1"></span><span class="loading-dot loading-dot-2"></span><span class="loading-dot loading-dot-3"></span></div>
     </div>
   </div>
-  
-</div>
-
-<div class="modal fade" id="myModal2" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p style="color: black;">modal for rover 2.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  <div id="overlay-effect"></div>
+  <!-- Navbar-->
+  <nav class="navbar-expand-md navbar fixed-top" id="navbar"><a class="navbar-brand" data-scroll="" href="#home-area">
+      <!-- Navbar Logo-->
+      <img class="img-fluid" src="img/Picture2.png" alt="Logo"></a>
+    <span class="navbar-menu ml-auto" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" role="button"><span class="btn-line"></span></span>
+    <div class="collapse navbar-collapse order-1 order-lg-0" id="navbarSupportedContent">
+      <!-- Navbar menu-->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resume">Journey</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://blog.aresroboticsnsut.com/" target="_blank">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Support Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Home-->
+  <section class="home-area element-cover-bg video-variant" id="home" style="background-image:url(img/back-mars.jpg)">
+    <div class="player" id="homeVideo" data-property="{videoURL:'https://www.youtube.com/watch?v=rpjQ9aL8PLs&t=34s',containment:'#home',autoPlay:true, mute:true, showControls:false, stopMovieOnBlur:false, showYTLogo: false}"></div>
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center">
+        <div class="col-12 col-lg-8 home-content text-center">
+          <h1 class="home-name"><img src="img/Picture1.png" style="height: 400px; width: 400px;"></h1><!--<span>Robotics</span></h1>-->
+          <h4 class="cd-headline clip home-headline">We are <span class="cd-words-wrapper single-headline"><b class="is-visible"> Developers.</b><b> Engineers.</b><b> Achievers.</b><b> ARES Robotics.</b></span></h4>
         </div>
       </div>
-      
     </div>
-  </div>
-  
-</div>
-
-<div class="modal fade" id="myModal3" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p style="color: black;">modal for rover 3.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
+    <div class="fixed-wrapper">
+      <!-- Social media icons-->
+      <div class="fixed-block block-right">
+        <ul class="list-unstyled social-icons">
+          <li><a href="https://www.youtube.com/channel/UCLKSVL4HznfNCShrEWSyu7A"><i class="icon ion-logo-youtube"></i></a></li>
+          <li><a href="https://www.facebook.com/aresmarsrover/?ref=page_internal"><i class="icon ion-logo-facebook"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/team-ares-robotics/"><i class="icon ion-logo-linkedin"></i></a></li>
+          <li><a href="https://github.com/TeamARES"><i class="icon ion-logo-github"></i></a></li>
+          <li><a href="https://www.instagram.com/aresrobotics.nsut/"><i class="icon ion-logo-instagram"></i></a></li>
+        </ul>
       </div>
-      
     </div>
-  </div>
-  
-</div>
-
-<div class="modal fade" id="myModal4" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p style="color: black;">modal for rover 4.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
+  </section>
+  <!-- About lightbox-->
+  <div class="lightbox-wrapper" id="about" data-simplebar>
+    <div class="container">
+      <div class="lightbox-close">
+        <div class="close-btn" data-modal-close=""><span class="btn-line"></span></div>
       </div>
-      
-    </div>
-  </div>
-  
-</div>
-
-<!-- modals end here -->
-
-
-
-    <footer id="home6">
-      <div id="upperfooter" style="text-align: left; position: relative;">
-          <div id="upperfooter-one">
-            <div class="quicklinks">
-              <h5><a>Home</a></h5>
-              <h5><a href="team.html">About Us</a></h5>
-              <h5><a href="urc.html">About URC</a></h5>
-              <h5></h5>
-            <h5></h5>
+      <div class="row">
+        <div class="col-12">
+          <div class="lightbox-content">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-heading page-heading">
+                  <p class="section-description">Get to know us</p>
+                  <h2 class="section-title">About A.R.E.S. Robotics</h2>
+                  <div class="animated-bar"></div>
+                </div>
+              </div>
             </div>
-            <div class="quicklinks">
-              <h5></h5>
-              <h5><a href="gallery.html">Gallery</a></h5>
-              <h5><a href="sponsors.html">Our Sponsors</a></h5>
-              <h5><a href="whysponsorus.html">Sponsor Us</a></h5>
+            <!-- Info section-->
+            <div class="info-section single-section">
+              <div class="row align-items-center">
+                <!-- Picture part-->
+                <div class="col-12 col-lg-5 info-img"><img class="img-fluid img-thumbnail" src="img/Picture1.png" alt="About Picture"></div>
+                <!-- Content part-->
+                <div class="col-12 col-lg-7 info-content">
+                  <div class="content-block">
+                    <h2 class="content-subtitle">Who are we?</h2>
+                    <h6 class="content-title">We Are A.R.E.S. Robotics.</h6>
+                    <div class="content-description">
+                      <p>Team ARES Robotics is a group of young engineering undergraduates from Netaji Subhash University of Technology that represents India in various International Competition like URC (University Rover Challenge) and ERC (European Rover Challenge). <br>
+                      Our team consists of students, highly interested in the field of Robotics and Artificial Intelligence and having an aim of designing and fabricating a fully functional Rover that can be used in the early exploration of the Mars. <br>
+                      Our projects required students having various skills and interests, that makes our team divide into 5 major sub teams (Software, Electronics, Mechanical, Science and Business). <br>
+                      Recently we qualified for the European Rover Challenge and were among the top 50 teams all over the world.
+                      </p>
+                    </div>
+                    <address class="content-info">
+                      <div class="row">
+                        <div class="col-12 col-md-6 single-info"><span>Name:</span>
+                          <p>ARES Robotics</p>
+                        </div>
+                        <div class="col-12 col-md-6 single-info"><span>Email:</span>
+                          <p><a href="mailto:emma@example.com">teamaresnsit@gmail.com</a></p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-md-6 single-info"><span>Age:</span>
+                          <p>3</p>
+                        </div>
+                        <div class="col-12 col-md-6 single-info"><span>From:</span>
+                          <p>New Delhi, India</p>
+                        </div>
+                      </div>
+                    </address>
+                    <div class="d-block d-sm-flex align-items-center"><a class="btn content-download button-main button-scheme" href="docs/Brochure.pdf" role="button">Download our Brochure</a>
+                      <ul class="list-unstyled list-inline content-follow">
+                        <li class="list-inline-item"><a href="#0"><i class="icon ion-logo-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/aresrobotics.nsut/"><i class="icon ion-logo-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/company/team-ares-robotics/"><i class="icon ion-logo-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/TeamARES"><i class="icon ion-logo-github"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/aresmarsrover/?ref=page_internal"><i class="icon ion-logo-facebook"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-              <div id="medialinks">
-              <a href="https://www.facebook.com/aresmarsrover/" class=''><img src='facebooklogo.png'></a>
-              <a href="https://www.youtube.com/channel/UCLKSVL4HznfNCShrEWSyu7A" class=''><img src='youtubelogo.png'></a>
-              <a href="https://www.linkedin.com/company/team-ares-robotics/" class=''><img src='linkedinlogo.png'></a>
+            <!-- Services section-->
+            <div class="services-section single-section">
+              <div class="row">
+                <div class="col-12">
+                  <div class="section-heading">
+                    <p class="section-description">The Pillars of our Team</p>
+                    <h2 class="section-title">Our Departments</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!-- Single service-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service"><i class="icon service-icon ion-md-construct"></i><!--</i><i class="icon service-icon ion-logo-css3"></i>-->
+                    <h6 class="service-title">Mechanical & Mechatronics Design</h6>
+                    <p class="service-description">Our Mechanical Department develops all mechanical aspects of the rover: the drive system, chassis, arm, propulsions, hydraulics, pneumatics and scientific devices. The reliablilty and performance of the mechincal systems is the bedrock for all operations of the rover.</p>
+                  </div>
+                </div>
+                <!-- Single service-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service"><i class="icon service-icon ion-md-desktop"></i><!--<i class="icon service-icon ion-md-images">--></i>
+                    <h6 class="service-title">Autonomous Traversal & Software</h6>
+                    <p class="service-description">Our Software Department develops the processes for the operations of our rover. The subteam constructs subroutines for autonomous traversal, terrain mapping, motor controls, arm manipulation, remote communication, and data analysis.</p>
+                  </div>
+                </div>
+                <!-- Single service-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service"><i class="icon service-icon ion-md-pulse"></i>
+                    <h6 class="service-title">Electronics & Communication</h6>
+                    <p class="service-description">Our Electronics Department provides power for the rovers, with wire management, power vigilance, safety, PCB design, and hardware organization. Their eletrical expertise supplies the other teams with the freedom to develop brilliant solutions.</p>
+                  </div>
+                </div>
+                <!-- Single Service -->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service"><i class="icon service-icon ion-md-rose"></i>
+                    <h6 class="service-title">Science & Soil Analysis</h6>
+                    <p class="service-description">Our science team cooperates heavily with other substeams to develop the theories and methods for determining the prescence of extraterrestrial life. We employ theoritical and experimental techniques from astrobiology such as spectroscopy, chemical analysis, and microbiology to analyze soil for the presence of extinct or extant life.</p>
+                  </div>
+                </div>
+                <!-- Single service-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service"><i class="icon service-icon ion-md-megaphone"></i><!--<i class="icon service-icon ion-md-move"></i>-->
+                    <h6 class="service-title">Management & Operations</h6>
+                    <p class="service-description">Our management team forms a critical part of the ARES mission. It keeps the team together and contributes in managing all the operations happening inside the team. The department handles planning, presentation and organization for the whole team. Smooth conduct of all the operations makes them the backbone of ARES.</p>
+                  </div>
+                </div>
+                <!-- Single service-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service"><i class="icon service-icon ion-ios-rocket"></i>
+                    <h6 class="service-title">Outreach & Web</h6>
+                    <p class="service-description">Our business and outreach department plays an important part in the ARES mission. It records the expenses and contributes in sponsoring all the initiatives taken up by the team. It also handles documentation, finances and outreach for the whole team.They handle all the treasury, which plays an vital role in fulfilling our Teams facilities.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div id="upperfooter-middle">
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faresmarsrover%2F&tabs=timeline&width=340&height=200&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="100%" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" id="fbplugin"></iframe>
-          </div>
-          <div id='upperfooter-two'>
-            <div>
-              <li>
-                <img src='envelope.png' alt='email logo'>
-                  <div>
-                      <h5>teamaresnsit@gmail.com</h5>
+            <!-- Testimonials section-->
+            <div class="testimonials-section single-section">
+              <div class="row">
+                <div class="col-12">
+                  <div class="section-heading">
+                    <p class="section-description">What our Past Team Alumni think about us...</p>
+                    <h2 class="section-title">Testimonials</h2>
                   </div>
-              </li>
-              <li>
-                <img src='phone.png' alt='mobile phone logo'>
-                  <div>
-                    <h5>Devansh Batra</h5>
-                    <h5>+91 - 8930485111</h5>
+                </div>
+              </div>
+              <div class="my-slider">
+                <div class="slider-item">
+                  <!-- Single review-->
+                  <div class="single-review swiper-slide">
+                    <div class="review-header d-flex justify-content-between">
+                      <div class="review-client">
+                        <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/team/Abhinav Gupta.jpg" alt="Client">
+                          <div class="client-details">
+                            <h6 class="client-name">Abhinav Gupta</h6><span class="client-role">Electronics-Lead-2019</span>
+                          </div>
+                        </div>
+                      </div><i class="icon ion-md-quote review-icon"></i>
+                    </div>
+                    <p class="review-content">ARES is a team you, which want to be part of, if you are looking to hone your technical and leadership skills in all domains of engineering. This society has allowed me to observe the most capable engineering undergraduates, innovate brilliantly with just the resources at hand. A truly inspiring place to be in.</p>
                   </div>
-              </li>
-              <li>
-                <img src='phone.png' alt='mobile phone logo'>
-                  <div>
-                    <h5>Nishant Chahar</h5>
-                    <h5>+91 - 8130624192</h5>
+                </div>
+                <div class="slider-item">
+                  <!-- Single review-->
+                  <div class="single-review swiper-slide">
+                    <div class="review-header d-flex justify-content-between">
+                      <div class="review-client">
+                        <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/team/Siddhant Banyal.png" alt="Client">
+                          <div class="client-details">
+                            <h6 class="client-name">Siddhant Banyal</h6><span class="client-role">Business & Admin Lead-2019</span>
+                          </div>
+                        </div>
+                      </div><i class="icon ion-md-quote review-icon"></i>
+                    </div>
+                    <p class="review-content">My association with ARES started in 2019, although I was a fresher and a senior at the same time the team went to great lengths to make the transition comfortable. I still remember my first meet in Nesci, the kind of motivation it imbibed in me was unparalleled. Go ARES.</p>
                   </div>
-              </li>
+                </div>
+                <div class="slider-item">
+                  <!-- Single review-->
+                  <div class="single-review swiper-slide">
+                    <div class="review-header d-flex justify-content-between">
+                      <div class="review-client">
+                        <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/team/shashu.jpeg" alt="Client">
+                          <div class="client-details">
+                            <h6 class="client-name">Shashank Vishwanath Adhikarla</h6><span class="client-role">Science-Lead-2019</span>
+                          </div>
+                        </div>
+                      </div><i class="icon ion-md-quote review-icon"></i>
+                    </div>
+                    <p class="review-content">For Science, keep a very open mind about everything! Research well, flit through every idea, discuss things, and fearlessly implement things.Be brave about it. ARES has been a great and memorable journey.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Pricing section-->
+            <div class="pricing-section single-section">
+              <div class="row">
+                <div class="col-12">
+                  <div class="section-heading">
+                    <p class="section-description">Our Innovations</p>
+                    <h2 class="section-title">Rovers So far...</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-center video" id="blur">
+                
+                <!-- Single plan-->
+                <div class="col-lg-4">
+                  <div class="single-plan mb-4 mb-sm-5"><!--<i class="plan-icon icon ion-md-egg"></i>-->
+                    <a class="portfolio-item" href="img/titan-2018.jpg"  data-lightbox>
+                        <center>
+                          <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/Picture4.png"  
+                            style="height: 100px; width: 100px;" >
+                            <div class="item-content">
+                              <h6 class="content-title"><!--Label Tag Mockup--></h6><span class="content-more">Rover</span>
+                            </div>
+                          </div>
+                        </center>
+                      </a>
+                    <h3 class="plan-type">Titan</h3>
+                    <h2 class="plan-price">2018</h2>
+                    <ul class="list-unstyled plan-list">
+                      <li>Ladder Frame</li>
+                      <li>Polyurethene Balloon Tyres</li>
+                      <li>Modified Rocker-Bogie</li>
+                      <li>4 DOF Robotic Arm</li>
+                      <li>Raspberry Pi</li>
+                      <li>Ubiquity Modules</li>
+                      <li>Carbon Brush Motors</li>
+                      <li>24V LiPo</li>
+                      <li>3D Metallic Drill</li>
+                    </ul><a class="btn button-main button-scheme plan-btn" role = "button" href="Titan/titan.html" target="_blank">More Info</a>
+                  </div>
+                </div>
+                <!-- Single plan-->
+                <div class="col-lg-4">
+                  <div class="single-plan mb-4 mb-sm-5">
+                    <a class="portfolio-item" href="img/atom-1.png"  data-lightbox>
+                        <center>
+                          <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/Picture4.png"  
+                            style="height: 100px; width: 100px;" >
+                            <div class="item-content">
+                              <h6 class="content-title"><!--Label Tag Mockup--></h6><span class="content-more">Rover</span>
+                            </div>
+                          </div>
+                        </center>
+                      </a>
+                    <h3 class="plan-type">Atom 1.0</h3>
+                    <h2 class="plan-price">2019</h2>
+                    <ul class="list-unstyled plan-list">
+                      <li>Thick Aluminium 6061 Tubes</li>
+                      <li>Polyurethene Balloon Tyres</li>
+                      <li>Wishbone Suspension System</li>
+                      <li>6 DOF with a 2-Claw Gripper</li>
+                      <li>Raspebrry Pi</li>
+                      <li>Omnidirectional MIMO Antenna</li>
+                      <li>Brushed DC Motor</li>
+                      <li>21Ah Li-ion</li>
+                      <li>Retractable Auger-based Drill</li>
+                    </ul><a class="btn button-main button-scheme plan-btn" href="Atom-I/atom-I.html" role="button" target="_blank">More Info</a>
+                  </div>
+                </div>
+                                <!-- Single plan-->
+                <div class="col-lg-4">
+                  <div class="single-plan mb-4 mb-sm-5">
+                      <a class="portfolio-item" href="img/2020.jpg"  data-lightbox>
+                        <center>
+                          <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/Picture4.png"  
+                            style="height: 100px; width: 100px;" >
+                            <div class="item-content">
+                              <h6 class="content-title"><!--Label Tag Mockup--></h6><span class="content-more">Rover</span>
+                            </div>
+                          </div>
+                        </center>
+                      </a>
+                    <h3 class="plan-type">Atom 2.0</h3>
+                    <h2 class="plan-price">2020</h2>
+                    <ul class="list-unstyled plan-list">
+                      <li>Aluminium 6061 T-6</li>
+                      <li>Low Pressure Balloon Tyres</li>
+                      <li>Trailing & Leading Suspension</li>
+                      <li>5 DOF</li>
+                      <li>Nvidia Jetson Nano + Raspberry Pi 4b</li>
+                      <li>2.4 GHz & 5 GHz Antenna</li>
+                      <li>Brushed DC Motors</li>
+                      <li>21Ah Li-ion</li>
+                      <li>Retractable Auger-based Drill</li>
+                    </ul><a class="btn button-main button-scheme plan-btn" href="Atom-II/atom-II.html" role="button" target="_blank">More Info</a>
+                  </div>
+                </div>
+                </div>
 
-              <li>
-                <img src='house.png' alt='address logo'>
-                  <div>
-                      <h5>ARES Robotics,
-                          Dwarka Sector-3, Dwarka, Delhi, 110078 - 576104</h5>
-                  </div>
-              </li>
+              </div>
             </div>
           </div>
+        </div>
       </div>
-    </footer>
-    <div style="background-color: rgb(0,128,128); color: black; margin: 0em; padding: 0.5vw; text-align: center; font-size: 1.5vw;">
-  <p style=" font-family:Helvetica Neue;">Made by: <a style="color: white; text-decoration: underline;font-size: 1.75vw;" href="https://github.com/sourabh112/" target="_blank">Sourabh</a></p>
-</div>
-<script type="text/javascript">
-  var t=0;
-  function nav_open () {
-    var x = window.matchMedia("(max-width: 1065px)")
-    var navi = document.getElementsByClassName("linking");
-    var navi1 = document.getElementsByClassName("close");
-    var navi2 = document.getElementsByClassName("check");
-    if (t%2==0) {
-    navi[0].style.display="block"
-    navi1[0].src="img/close.png";
-    t++;
-  }
-  else{
-    navi[0].style.display="none"
-    navi1[0].src="img/nav_logo.png";
-    t++;
-  }
-  }
-</script>
+    </div>
+  </div>
+  <!-- Resume lightbox-->
+  <div class="lightbox-wrapper" id="resume" data-simplebar>
+    <div class="container">
+      <div class="lightbox-close">
+        <div class="close-btn" data-modal-close=""><span class="btn-line"></span></div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="lightbox-content">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-heading page-heading">
+                  <p class="section-description">Check out our Journey.</p>
+                  <h2 class="section-title">Journey So Far...</h2>
+                  <div class="animated-bar"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Resume section-->
+            <div class="resume-section single-section">
+              <div class="row">
+                <!-- Education part-->
+                <div class="col-12 col-md-6">
+                  <div class="col-block education">
+                    <h3 class="col-title">Timeline</h3>
+                    <div class="resume-item"><span class="item-arrow"></span>
+                      <h5 class="item-title">The Dawn</h5><span class="item-details">Netaji Subhas Institute of Technology / October - 2017</span>
+                      <p class="item-description"> - A.R.E.S. - Autonomous Rover using Embedded Systems Robotics was formed at Netaji Subhas Institute of Technolgy (now, Netaji Subhash University of Technology).</p>
+                    </div>
+                    <div class="resume-item"><span class="item-arrow"></span>
+                      <h5 class="item-title">Indian Rover Challenge (IRC) - 2018</h5><span class="item-details">Vellore Institue of Technology, Vellore / January - 2018</span>
+                      <p class="item-description">Participated in the Inaugural Edition of the Indian Rover Challenge</p>
+                    </div>
+                    <div class="resume-item"><span class="item-arrow"></span>
+                      <h5 class="item-title">University Rover Challenge (URC) - 2018</h5><span class="item-details">Mars Desert Research Station, Utah, USA / June - 2018 </span>
+                      <p class="item-description">Cleared Preliminary Design Review (PDR) round at University Rover Challenge, USA.
+                      </p>
+                    </div>
+                    <div class="resume-item"><span class="item-arrow"></span>
+                      <h5 class="item-title">European Rover Challenge (ERC-2018)</h5><span class="item-details"> Starachowice, Poland / September - 2018</span>
+                      <p class="item-description">The fourth edition of the European Rover Challenge was organized in Starachowice, at the Museum of Nature and Technology. The competition was attended by 35 teams from 20 countriesQualified to represent NSUT at the European Rover Challenge.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Experience part-->
+                <div class="col-12 col-md-6">
+                  <div class="col-block experience">
+                    <h3 class="col-title"> &emsp; &emsp;</h3>
+                    
+                    <div class="resume-item"><span class="item-arrow"></span>
+                      <h5 class="item-title">University Rover Challenge (URC-2019)</h5><span class="item-details">Mars Desert Research Station, Utah, USA / March - 2019 </span>
+                      <p class="item-description"> Cleared Preliminary Design Review (PDR) round.</p>
+                    </div>
+                    <div class="resume-item"><span class="item-arrow"></span>
+                      <h5 class="item-title">European Rover Challenge (ERC-2019)</h5><span class="item-details">Kielce University of Technology, Kielce, Poland / September 2019</span>
+                      <p class="item-description">Invited for on-field finals in at Europen Rover Challenge.</p>
+                    </div>
+                    <div class="resume-item"><span class="item-arrow"></span>
+                      <h5 class="item-title">Indian Rover Challenge (IRC-2020)</h5><span class="item-details"> Vellore Institute of Technology, Vellore, India / January - 2020</span>
+                      <p class="item-description">Placed 13th at the On-Field Finals at Indian Rover Challenge.</p>
+                    </div>
+                    <div class="resume-item"><span class="item-arrow"></span>
+                      <h5 class="item-title">University Rover Challenge (URC-2021)</h5><span class="item-details"> Mars Deseart Research Station, Utah, USA / March - 2021</span>
+                      <p class="item-description">Preparing and Heading towards the University Rover Challenge 2020 triumphantly, which is to be held at Utah, United States.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Video section-->
+            <div class="video-section single-section">
+              <div class="row align-items-center">
+                <div class="col-12 col-lg-6 content-part">
+                  <h3 class="video-title">Take a tour of our Society..</h3>
+                  <p class="video-description">Team Ares is an undergraduate multi-disciplinary student team of space aficionados from Netaji Subhas Institute Of Technology (NSIT) working to formulate, design and fabricate a rover that can be put to use in early exploration of Mars.</p>
+                </div>
+                <div class="col-12 col-lg-6 video-part"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Faresmarsrover%2Fvideos%2F634222057343243%2F&show_text=0&width=560" width="560" height="308" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio lightbox-->
+  <div class="lightbox-wrapper" id="portfolio" data-simplebar>
+    <div class="container">
+      <div class="lightbox-close">
+        <div class="close-btn" data-modal-close=""><span class="btn-line"></span></div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="lightbox-content">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-heading page-heading">
+                  <p class="section-description">Showcasing all those who contributed to this Innovation</p>
+                  <h2 class="section-title">The Team</h2>
+                  <div class="animated-bar"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio section-->
+            <div class="portfolio-section single-section">
+              <div class="row">
+                <!-- Filter nav-->
+                <div class="col-12">
+                  <ul class="list-inline filter-control" role="group" aria-label="Filter Control">
+                    <li class="list-inline-item tab-active" data-filter="*">All Team Members</li>
+                    <li class="list-inline-item" data-filter=".brand">2018</li>
+                    <li class="list-inline-item" data-filter=".design">2019</li>
+                    <li class="list-inline-item" data-filter=".photos">2020</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Thumbnail list-->
+              <div class="portfolio-grid row">
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Nishant Chahar.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Nishant Chahar.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Nishant Chahar &emsp; President - 2020-21</h6>
+                        <span class="content-more">Hi, I'm Nishant Chahar from COE of graduating year 2021. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Business and Management department of Ares. I worked as member in Ares team and will love to work with my team till my graduating year. 
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href="https://www.youtube.com/channel/UCVe8CMJF4caRzuckVYV8CaQ" target="_blank"><i class="icon ion-logo-youtube"></i></a> &emsp;
+                            <a href="https://www.facebook.com/CHAHAR.NISHANT11"><i class="icon ion-logo-youtube"></i></a> &emsp;
+                            <a href="https://www.linkedin.com/in/chaharnishant11/"><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href="https://github.com/chaharnishant11"><i class="icon ion-logo-github"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Devansh Batra.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Devansh Batra.jpg" style="height: 330px;">
+                      <div class="item-content">
+                        <h6 class="content-title">Devansh Batra &emsp; President - 2020-21</h6><span class="content-more"> Hi, I'm Devansh Batra from IT of graduating year 2021. I have been member of Ares from 2018 and worked with team to make Atom II. It's my pleasure that I working in Software department of Ares. I worked as Software Lead in Ares.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href="https://www.facebook.com/devansh.batra.75"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="https://in.linkedin.com/in/devanshbatra04"><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href="https://github.com/devanshbatra04"><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href="https://devanshbatra.com/resume.html"><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Jitmanyu_Anand.JPG" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Jitmanyu_Anand.JPG">
+                      <div class="item-content">
+                        <h6 class="content-title">Jitmanyu Anand &emsp; Team Leader 2020-21</h6><span class="content-more"> Hi, I'm Jitmanyu Anand from ECE of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working as the Team Lead in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href="https://www.facebook.com/people/Jitmanyu-Anand/100011408486475"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="https://in.linkedin.com/in/jitmanyu-anand-525931183"><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href="https://www.instagram.com/jitmanyuanand/"><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                  <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Mohit Anant.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Mohit Anant.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Mohit Anant &emsp; Science Co-Leader 2020-21</h6><span class="content-more"> Hi, I'm Mohit Anant from Biotechnology of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working as the Co-Lead for Science & Soil Analysis in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                  <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Amisha Bhaskar.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Amisha Bhaskar.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Amisha Bhaskar &emsp; Mech. Co-Leader 2020-21</h6><span class="content-more"> Hi, I'm Amisha Bhaskar from Mechanical of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working as the Co-Lead for Mechatronics in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                  <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Mayank Pandit.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Mayank Pandit.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Mayank Pandit &emsp; Team Leader 2020-21</h6><span class="content-more"> Hi, I'm Mayank Pandit from Mechanical of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working as the Team Lead in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                  <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Arjjun Singh.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Arjjun Singh.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Arjun Singh &emsp; Science Lead 2020-21</h6><span class="content-more"> Hi, I'm Arjun Singh from Biotechnology of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working as the Lead for Science & Soil Analysis in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                  <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Swaranjeet Singh.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Swaranjeet Singh.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Swaranjeet Singh &emsp; Science Co-Leader 2020-21</h6><span class="content-more"> Hi, I'm Swaranjeet Singh from Biotechnology of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working as the Co-Lead for Science & Soil Analysis in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Shiv Kumar.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Shiv Kumar.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Shiv Kumar &emsp; Software Lead 2018-19</h6><span class="content-more">Hi, I'm Shiv Kumar from IT of graduating year 2020. I have been member of Ares from 2018 and worked with team to make Atom II. It's my pleasure that I working in Software department of Ares. I worked as Software Lead (2019), Lead Mentor (2020) in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href="https://www.facebook.com/championballer08"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="https://www.linkedin.com/in/championballer"><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href="https://github.com/championballer"><i class="icon ion-logo-github"></i></a></li>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Abhinav Gupta.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Abhinav Gupta.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Abhinav Gupta &emsp; Electronics Lead 2019-20</h6><span class="content-more">Hi, I'm Abhinav Gupta from ICE of graduating year 2020. I have been member of Ares from 2018 and worked with team to make Atom II. It's my pleasure that I working in Electronics department of Ares. I worked as Electronics Lead in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href="https://www.facebook.com/memelord137"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="https://www.linkedin.com/in/abhinav-gupta-37a7aa87/"><i class="icon ion-logo-linkedin"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Achintya.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Achintya.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Achintya Shankhdhar</h6><span class="content-more">Hi, I'm Achintya Shankhdhar  from ICE of graduating year 2021. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Software department of Ares. I worked as member in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Akhil Vaid.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Akhil Vaid.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Akhil Vaid</h6><span class="content-more">Hi, I'm Akhil Vaid from COE of graduating year 2021. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Softwarev,Cvck.k department of Ares. I worked as member in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href="https://codesniper99.github.io/Portfolio/"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="https://www.linkedin.com/in/akhil-vaid-7a7800164/"><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href="https://github.com/codesniper99"><i class="icon ion-logo-github"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                  <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Manan Madan.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Manan Madan.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Manan Madan &emsp; Software Lead 2020-21</h6><span class="content-more">Hi, I'm Manan Madan from ICE of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Software department of Ares. I worked as member in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href="https://www.facebook.com/manan.madan.12327"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="https://www.linkedin.com/in/manan-madan-646950167/"><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href="https://github.com/mananmadan"><i class="icon ion-logo-github"></i></a>
+                            </li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                  <div class="single-item col-6 col-lg-4 brand design"><a class="portfolio-item" href="img/team/Devansh Jain.jpeg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Devansh Jain.jpeg">
+                      <div class="item-content">
+                        <h6 class="content-title">Devansh Jain &emsp; President 2018-19</h6><span class="content-more">Hi, I'm Devansh Jain Nawal  from COE of graduating year 2020. I have been member of Ares from 2017 and worked with team to make Rover 2018. It's my pleasure that I working in Software department of Ares. I worked as Team Lead in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href="http://www.devanshjainnawal.com"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="http://linkedin.com/in/devansh-jain-nawal"><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href="http://www.github.com/devanshjain98"><i class="icon ion-logo-github"></i></a>
+                            </li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Manpreet Kukreja.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Manpreet Kukreja.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Manpreet Kukreja Mech Team Leader 2019-20</h6><span class="content-more">Hi, I'm Manpreet Kukreja from MPAE of graduating year 2021. I have been member of Ares from 2018 and worked with team to make Atom II. It's my pleasure that I working in Mechanical department of Ares. I worked as Mechanical Team Lead in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href="https://m.facebook.com/manpreet.kukreja.7"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="https://www.linkedin.com/in/manpreet-kukreja-5b4081172"><i class="icon ion-logo-linkedin"></i></a>
+                          </li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/samyak uttam.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/samyak uttam.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Samyak Uttam</h6><span class="content-more">Hi, I'm Samyak Uttam from ECE of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Software department of Ares. I worked as member in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href="https://twitter.com/samyak_uttam"><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href="https://www.facebook.com/samyak.uttam"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="https://www.linkedin.com/in/samyak-uttam-364816194/"><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href="https://github.com/samyak-uttam"><i class="icon ion-logo-github"></i></a>
+                          </li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/harsh gupta.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/harsh gupta.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Harsh Gupta &emsp; Software Lead 2020-21</h6><span class="content-more">Hi, I'm Harsh Gupta from ICE of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Software department of Ares. I worked as member in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href="https://m.facebook.com/harsh.gupta.7547031?ref=bookmarks"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="https://www.linkedin.com/in/harsh-gupta-202418187"><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href="https://github.com/harshgupta99"><i class="icon ion-logo-github"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Milind Jain.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Milind Jain.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Milind Jain &emsp; Mech Co-Lead 2020-21</h6><span class="content-more">Hi, I'm Milind Jain from Mechanical of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Mechanical department of Ares. I worked as member in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Pranav Arora.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Pranav Arora.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Pranav Arora - Operation Team Lead - 2020-21</h6><span class="content-more">Hi, I'm Pranav Arora from ICE of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Business and Management department of Ares. I worked as member in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href="https://www.linkedin.com/in/pranav-arora-101116178"><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href="https://github.com/PranavArora7"><i class="icon ion-logo-github"></i></a>
+                          </li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Gaurav Verma.JPG" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Gaurav Verma.JPG">
+                      <div class="item-content">
+                        <h6 class="content-title">Gaurav Verma - Mech. Team Leader - 2020-21</h6><span class="content-more">Hi, I'm Gaurav Verma from Mechanical of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Mechanical department of Ares. I worked as member in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href="https://www.facebook.com/profile.php?id=100015379005555"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="https://www.linkedin.com/in/gaurav-verma-93b6b2119"><i class="icon ion-logo-linkedin"></i></a>
+                          </li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/abhinav goel.png" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/abhinav goel.png">
+                      <div class="item-content">
+                        <h6 class="content-title">Abhinav Goel</h6><span class="content-more">Hi, I'm Abhinav Goel from ECE of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Electronics department of Ares. I worked as member in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href="https://www.facebook.com/abhinav.goel.528316"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="https://www.linkedin.com/in/abhinav-goel-2ab13a185"><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href="https://github.com/abhinav2609"><i class="icon ion-logo-github"></i></a>
+                          </li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Anshita Goel.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Anshita Goel.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Anshita Goel &emsp; Outreach Lead 2020-21</h6><span class="content-more">Hi, I'm Anshita Goel from MPAE of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Business and Management department of Ares. I worked as member in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 brand"><a class="portfolio-item" href="img/team/Astitwa Saxena.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Astitwa Saxena.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Astitwa Saxena</h6><span class="content-more">Hi, I'm Astitwa Saxena from COE of graduating year 2019. I have been member of Ares from 2017 and worked with team to make Rover 2018. It's my pleasure that I working in Software department of Ares. I worked as Software Lead in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Sanuj.jpeg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Sanuj.jpeg">
+                      <div class="item-content">
+                        <h6 class="content-title">Sanuj Kulshreshtha &emsp; President 2019-20</h6><span class="content-more">Hi, I'm Sanuj Kulshrestha from ECE of graduating year 2021. I have been member of Ares from 2018 and worked with team to make Atom II. It's my pleasure that I working in Electronics department of Ares. I worked as Team Leader in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href="https://www.facebook.com/sanujkul"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="https://www.linkedin.com/in/sanujkul/"><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href="https://github.com/sanujkul"><i class="icon ion-logo-github"></i></a>
+                          </li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Sanyam Jain.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Sanyam Jain.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Sanyam Jain</h6><span class="content-more">Hi, I'm Sanyam Jain from ECE of graduating year 2021. I have been member of Ares from 2018 and worked with team to make Atom II. It's my pleasure that I working in Electronics department of Ares. I worked as Electronics Lead in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Saurabh Yewale.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Saurabh Yewale.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Saurabh Yewale</h6><span class="content-more">Hi, I'm Saurabh Yewale from Mechanical of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Mechanical department of Ares. I worked as member in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href="https://m.facebook.com/saurabh.yewale.5?ref=bookmarks"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/shaonak dayal.JPG" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/shaonak dayal.JPG">
+                      <div class="item-content">
+                        <h6 class="content-title">Shaonak Dayal</h6><span class="content-more">Hi, I'm Shaonak Dayal from ECE of graduating year 2021. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Software department of Ares.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/shashu.jpeg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/shashu.jpeg">
+                      <div class="item-content">
+                        <h6 class="content-title">Shashank Vishwanath Adhikarla</h6><span class="content-more">Hi, I'm Shashank Vishwanath Adhikarla from BT of graduating year 2020. I have been member of Ares from 2018 and worked with team to make Atom II. It's my pleasure that I working in Science department of Ares. I worked as Science Lead in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href="https://twitter.com/as_methotrexate"><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href="https://www.facebook.com/shashankvadhikarla"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="https://www.linkedin.com/in/shashank-vishwanath-adhikarla-308218126/"><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href="https://github.com/shashankadhikarla"><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href="https://www.researchgate.net/profile/Shashank_Adhikarla"><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Siddhant Banyal.png" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Siddhant Banyal.png">
+                      <div class="item-content">
+                        <h6 class="content-title">Siddhant Banyal</h6><span class="content-more">Hi, I'm Siddhant Banya from ICE of graduating year 2020. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Business and Management department of Ares. I worked as Business and Administrative Lead in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href="https://www.facebook.com/banyalsiddhant"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="www.linkedin.com/in/siddhantbanyal"><i class="icon ion-logo-linkedin"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Satvik Sharma.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Satvik Sharma.jpg" style="height: 600px;">
+                      <div class="item-content">
+                        <h6 class="content-title">Satvik Sharma &emsp; Electronics Lead 2020-21</h6><span class="content-more">Hi, I'm Satvik Sharma from ECE of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Electronics department of Ares. I worked as Electronics Lead in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Sj Singh.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Sj Singh.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Simranjeet Singh</h6><span class="content-more">Hi, I'm Simranjeet Singh from ECE of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Software department of Ares. I worked as member in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/swati garg.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/swati garg.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Swati Garg</h6><span class="content-more">Hi, I'm Swati garg from ICE of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Business and Management department of Ares. I worked as member in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                                  <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/ujjwal aggarwal.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/ujjwal aggarwal.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Ujjwal Aggarwal</h6><span class="content-more">Hi, I'm Ujjwal aggarwal from MPAE of graduating year 2021. I have been member of Ares from 2018 and worked with team to make Atom II. It's my pleasure that I working in Mechanical department of Ares. I worked as member in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href="https://www.facebook.com/ujjwal.aggarwal.125"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="https://www.linkedin.com/in/ujjwal-aggarwal-855084183"><i class="icon ion-logo-linkedin"></i></a>
+                          </li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                    <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Nipunika.JPG" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Nipunika.JPG">
+                      <div class="item-content">
+                        <h6 class="content-title">Nipunika</h6><span class="content-more">Hi, I'm Nipunika from COE of graduating year 2022. I have been member of Ares from 2019 and worked with team to make Atom II. It's my pleasure that I working in Software department of Ares.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="www.linkedin.com/in/nipunika-hudia-30891a15b"><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href="https://github.com/Nipunnyka"><i class="icon ion-logo-github"></i></a>
+                            </li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                                                    <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Saurabh Yewale.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Kushagra Dixit.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Kushagra Dixit</h6><span class="content-more">Hi, I'm Kushagra Dixit from ICE of graduating year 2021. I have been member of Ares from 2018 and worked with team to make Atom I. It's my pleasure that I working in Electronics department of Ares. I worked as Electronics Lead in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href="https://m.facebook.com/profile.php?ref=bookmarks"><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href="https://www.linkedin.com/in/kushagra-dixit-34381262"><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href="https://github.com/kushagraDixit"><i class="icon ion-logo-github"></i></a>
+                          </li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+                  <div class="single-item col-6 col-lg-4 brand design"><a class="portfolio-item" href="img/team/Kunal Goel.jpeg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/team/Kunal Goel.jpeg">
+                      <div class="item-content">
+                        <h6 class="content-title">Kunal Goel &emsp; Electronics Lead - 2018-19</h6><span class="content-more">Hi, I'm Kunal Goel  from ECE of graduating year 2020. I have been member of Ares from 2018 and worked with team to make Rover 2018. It's my pleasure that I working in Software department of Ares. I worked as Team Lead in Ares team and will love to work with my team till my graduating year.
+                          <ul class="list-unstyled social-icons">
+                            <li>
+                            <a href=""><i class="icon ion-logo-twitter"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-facebook"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-linkedin"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-github"></i></a> &emsp;
+                            <a href=""><i class="icon ion-logo-instagram"></i></a></li>
+                          </ul>                        
+                        </span>
+                      </div>
+                    </div>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact lightbox-->
+  <div class="lightbox-wrapper" id="contact" data-simplebar>
+    <div class="container">
+      <div class="lightbox-close">
+        <div class="close-btn" data-modal-close=""><span class="btn-line"></span></div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="lightbox-content">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-heading page-heading">
+                  <p class="section-description">Feel free to contact us anytime</p>
+                  <h2 class="section-title">Get in Touch</h2>
+                  <div class="animated-bar">
+                  </div>
+                  <br>
+                  <h3 class = "section-title"> Sponsor Us</h3>
+                  <div class="animated-bar"></div>
+                    <p class="info-description" style="color: white;">While we are extremely passionate about robotics, however as students our progress is severely hindered by a lack of funds. Building a rover from scratch is a tough and equally expensive task. With a large team of various disciplines teaming up to address several challenges, we require to build the rover's body, sophisticated communication systems, a rather precise robotic arm, stereo vision system and much more. The cost for such a project is insanely huge to be funded by a group of students like us. While we try and make the best of whatever resources we can aquire, we almost definitely cannot be successful without outside aid. </p>
+                    <p class="info-description" style="color: white;">We are looking for Sponsors and Donors alike. If you are interested in supporting a young enthusiastic team working hard to bring home a passion for robotics, please do reach out to us. You can also support us through our online fundraising campaign on Ketto.</p><br>
+                    <a class="btn content-download button-main button-scheme" href="docs/Brochure.pdf" role="button">Download our Brochure</a><br><br>
+                    <img src="img/ketto.jpg" style="height: 100px; width: 300px;"><br>
+                    <a href="https://www.ketto.org/fundraiser/aresroboticsnsut?utm_source=internal&utm_medium=whatsappShare&utm_campaign=aresroboticsnsut&utm_content=652f3f041248406acca1ae1a9658ca38&shby=1" style="font-size: 50px;">Click Here to Sponsor Us on Ketto!</a>
+                    <br><br><br>
+                    <h3 class = "section-title">Our Sponsors</h3>
+                    <div class="animated-bar"></div><br>
+                    <img src="img/crompton-greaves.jpg" style="padding-right: 10px; height: 200px; width: 300px;">
+                    <img src="img/protocase.png" style="padding-right: 10px; height: 200px; width: 300px;">
+                    <img src="img/nsut.png" style="height: 200px; width: 300px;">
+                </div>
+              </div>
+            </div>
+            <!-- Contact section-->
+            <div class="contact-section single-section">
+              <div class="row">
+                <!-- Contact form-->
+                <div class="col-12 col-lg-7">
+                  <form class="contact-form" id="contact-form" action="php/contact.php">
+                    <h4 class="content-title">Wanna Join or Support our Team. Message Us</h4>
+                    <div class="row">
+                      <div class="col-12 col-md-6 form-group"><input class="form-control" id="contact-name" type="text" name="name" placeholder="Name" required=""></div>
+                      <div class="col-12 col-md-6 form-group"><input class="form-control" id="contact-email" type="email" name="email" placeholder="Email" required=""></div>
+                      <div class="col-12 form-group"><input class="form-control" id="contact-subject" type="text" name="subject" placeholder="Subject" required=""></div>
+                      <div class="col-12 form-group form-message"><textarea class="form-control" id="contact-message" name="message" placeholder="Message" rows="5" required=""></textarea></div>
+                      <div class="col-12 form-submit"><button class="btn button-main button-scheme" id="contact-submit" type="submit">Send Message</button>
+                        <p class="contact-feedback"></p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- Contact info-->
+                <div class="col-12 col-lg-5">
+                  <div class="contact-info">
+                    <h4 class="content-title">Contact Info</h4>
+                    <p class="info-description">Supporting Innovation and Stepping up our Space-Rover Technology to the Next-Level. We at ARES Robotics thrives for success. Always exploring magnificent ideas. Feel free to contact us!</p>
+                    <ul class="list-unstyled list-info">
+                      <li>
+                        <div class="media align-items-center"><span class="info-icon"><i class="icon ion-logo-ionic"></i></span>
+                          <div class="media-body info-details">
+                            <h6 class="info-type">Name</h6><span class="info-value">ARES Robotics</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="media align-items-center"><span class="info-icon"><i class="icon ion-md-map"></i></span>
+                          <div class="media-body info-details">
+                            <h6 class="info-type">Location</h6><span class="info-value">ARES Robotics, Dwarka,<br> Delhi - 110078-576104</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="media align-items-center"><span class="info-icon"><i class="icon ion-md-call"></i></span>
+                          <div class="media-body info-details">
+                            <h6 class="info-type">Call Us</h6><span class="info-value"><a href="tel:+441632967704">Devansh Batra - +91 89304 85111<br> Nishant Chahar - +91 8130624192</a></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="media align-items-center"><span class="info-icon"><i class="icon ion-md-send"></i></span>
+                          <div class="media-body info-details">
+                            <h6 class="info-type">Email Us</h6><span class="info-value"><a href="mailto:emma@example.com">teamaresnsit@gmail.com</a></span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Scripts-->
+    <script type="text/javascript">
+    function toggle(){
+      var blur = document.getElementById('blur');
+      blur.classList.toggle('active');
+      var popup3 = document.getElementById('popup3','popup2','popup3');
+      popup3.classList.toggle('active');
+//      var popup2 = document.getElementById('popup2');
+  //    popup2.classList.toggle('active');
+      var popup1 = document.getElementById('popup1');
+      popup1.classList.toggle('active');
+
+    }
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/animatedModal.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/lity.min.js"></script>
+  <script src="js/simplebar.min.js"></script>
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Custom JS (Add your custom JS scripts to this file)-->
+  <script src="js/custom.js"></script>
 </body>
+
 </html>
