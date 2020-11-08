@@ -28,7 +28,6 @@
   <link id="color-scheme" rel="stylesheet" href="css/colors/main-darkgreen.css">
   <!-- Custom CSS (Add your custom CSS styles to this file)-->
   <link rel="stylesheet" href="css/custom.css">
-  <script src="js/lazyload.js" defer></script>
 </head>
 <body class="theme-dark">
   <!-- Preloader-->
@@ -41,7 +40,7 @@
   <!-- Navbar-->
   <nav class="navbar-expand-md navbar fixed-top" id="navbar"><a class="navbar-brand" data-scroll="" href="#home-area">
       <!-- Navbar Logo-->
-      <img class="img-fluid" src="img/ARES_LOGO.webp" alt="Logo"></a>
+      <img class="img-fluid" src="" ></a>
     <span class="navbar-menu ml-auto" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" role="button"><span class="btn-line"></span></span>
     <div class="collapse navbar-collapse order-1 order-lg-0" id="navbarSupportedContent">
       <!-- Navbar menu-->
@@ -60,7 +59,7 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center">
         <div class="col-12 col-lg-8 home-content text-center">
-          <h1 class="home-name"><img src="img/Picture1.webp" style="height: 400px; width: 400px;"></h1><!--<span>Robotics</span></h1>-->
+          <h1 class="home-name"><img src="img/ARES_LOGO.webp" style="height: 400px; width: 400px;"></h1><!--<span>Robotics</span></h1>-->
           <h4 class="cd-headline clip home-headline">We are <span class="cd-words-wrapper single-headline"><b class="is-visible"> Developers.</b><b> Engineers.</b><b> Achievers.</b><b> ARES Robotics.</b></span></h4>
         </div>
       </div>
@@ -215,7 +214,7 @@
                   <div class="single-review swiper-slide">
                     <div class="review-header d-flex justify-content-between">
                       <div class="review-client">
-                        <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/team/Abhinav Gupta.webp" alt="Client">
+                        <div class="media"><img class="img-fluid rounded-circle client-avatar" data-src="img/team/Abhinav Gupta.webp" alt="Client">
                           <div class="client-details">
                             <h6 class="client-name">Abhinav Gupta</h6><span class="client-role">Electronics-Lead-2019</span>
                           </div>
@@ -230,7 +229,7 @@
                   <div class="single-review swiper-slide">
                     <div class="review-header d-flex justify-content-between">
                       <div class="review-client">
-                        <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/team/Siddhant Banyal.webp" alt="Client">
+                        <div class="media"><img class="img-fluid rounded-circle client-avatar" data-src="img/team/Siddhant Banyal.webp" alt="Client">
                           <div class="client-details">
                             <h6 class="client-name">Siddhant Banyal</h6><span class="client-role">Business & Admin Lead-2019</span>
                           </div>
@@ -245,7 +244,7 @@
                   <div class="single-review swiper-slide">
                     <div class="review-header d-flex justify-content-between">
                       <div class="review-client">
-                        <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/team/shashu.webp" alt="Client">
+                        <div class="media"><img class="img-fluid rounded-circle client-avatar" data-src="img/team/shashu.webp" alt="Client">
                           <div class="client-details">
                             <h6 class="client-name">Shashank Vishwanath Adhikarla</h6><span class="client-role">Science-Lead-2019</span>
                           </div>
@@ -438,7 +437,7 @@
                   <h3 class="video-title">Take a tour of our Society..</h3>
                   <p class="video-description">Team Ares is an undergraduate multi-disciplinary student team of space aficionados from Netaji Subhas Institute Of Technology (NSIT) working to formulate, design and fabricate a rover that can be put to use in early exploration of Mars.</p>
                 </div>
-                <div class="col-12 col-lg-6 video-part"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Faresmarsrover%2Fvideos%2F634222057343243%2F&show_text=0&width=560" width="560" height="308" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></div>
+                <div class="col-12 col-lg-6 video-part"><iframe data-src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Faresmarsrover%2Fvideos%2F634222057343243%2F&show_text=0&width=560" width="560" height="308" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></div>
               </div>
             </div>
           </div>
@@ -480,8 +479,9 @@
               <!-- Thumbnail list-->
               <div class="portfolio-grid row">
                 <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Nishant Chahar.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid lazy" alt="Item" src="img/team/Nishant Chahar.webp" >
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Nishant Chahar.webp" data-lightbox>
+                    <div class="portfolio-wrapper">
+                      <img class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Nishant Chahar.webp" >
                       <div class="item-content">
                         <h6 class="content-title">Nishant Chahar &emsp; President - 2020-21</h6>
                         <span class="content-more">
@@ -498,8 +498,9 @@
                     </div>
                   </a></div>
                 <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Devansh Batra.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Devansh Batra.webp" style="height: 330px;">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Devansh Batra.webp" data-lightbox>
+                    <div class="portfolio-wrapper">
+                      <img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Devansh Batra.webp" >
                       <div class="item-content">
                         <h6 class="content-title">Devansh Batra &emsp; President - 2020-21</h6>
                         <span class="content-more"> 
@@ -516,8 +517,9 @@
                     </div>
                   </a></div>
                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Jitmanyu_Anand.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img   class="img-fluid lazy" alt="Item" src="img/team/Jitmanyu_Anand.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Jitmanyu_Anand.webp" data-lightbox>
+                    <div class="portfolio-wrapper">
+                      <img class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Jitmanyu_Anand.webp">
                       <div class="item-content">
                         <h6 class="content-title">Jitmanyu Anand &emsp; Team Leader 2020-21</h6>
                         <span class="content-more"> 
@@ -532,8 +534,8 @@
                       </div>
                     </div>
                   </a></div>
-                  <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Mohit Anant.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Mohit Anant.webp">
+                  <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Mohit Anant.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Mohit Anant.webp">
                       <div class="item-content">
                         <h6 class="content-title">Mohit Anant &emsp; Science Co-Leader 2020-21</h6>
                         <span class="content-more">
@@ -550,8 +552,8 @@
                       </div>
                     </div>
                   </a></div>
-                  <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Amisha Bhaskar.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img   class="img-fluid lazy" alt="Item" src="img/team/Amisha Bhaskar.webp">
+                  <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Amisha Bhaskar.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img   class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Amisha Bhaskar.webp">
                       <div class="item-content">
                         <h6 class="content-title">Amisha Bhaskar &emsp; Mech. Co-Leader 2020-21</h6>
                         <span class="content-more">
@@ -568,8 +570,8 @@
                       </div>
                     </div>
                   </a></div>
-                  <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Mayank Pandit.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img   class="img-fluid lazy" alt="Item" src="img/team/Mayank Pandit.webp">
+                  <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Mayank Pandit.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img   class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Mayank Pandit.webp">
                       <div class="item-content">
                         <h6 class="content-title">Mayank Pandit &emsp; Team Leader 2020-21</h6>
                         <span class="content-more"> 
@@ -586,8 +588,8 @@
                       </div>
                     </div>
                   </a></div>
-                  <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Arjjun Singh.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Arjjun Singh.webp">
+                  <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Arjjun Singh.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Arjjun Singh.webp">
                       <div class="item-content">
                         <h6 class="content-title">Arjun Singh &emsp; Science Lead 2020-21</h6>
                         <span class="content-more">
@@ -604,8 +606,8 @@
                       </div>
                     </div>
                   </a></div>
-                  <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Swaranjeet Singh.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Swaranjeet Singh.webp">
+                  <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Swaranjeet Singh.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Swaranjeet Singh.webp">
                       <div class="item-content">
                         <h6 class="content-title">Swaranjeet Singh &emsp; Science Co-Leader 2020-21</h6>
                         <span class="content-more">
@@ -623,8 +625,8 @@
                     </div>
                   </a></div>
                 <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Shiv Kumar.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Shiv Kumar.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Shiv Kumar.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Shiv Kumar.webp">
                       <div class="item-content">
                         <h6 class="content-title">Shiv Kumar &emsp; Software Lead 2018-19</h6>
                         <span class="content-more">
@@ -639,8 +641,8 @@
                     </div>
                   </a></div>
                 <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Abhinav Gupta.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Abhinav Gupta.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Abhinav Gupta.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Abhinav Gupta.webp">
                       <div class="item-content">
                         <h6 class="content-title">Abhinav Gupta &emsp; Electronics Lead 2019-20</h6>
                         <span class="content-more">
@@ -655,8 +657,8 @@
                     </div>
                   </a></div>
                 <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Achintya.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Achintya.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Achintya.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Achintya.webp">
                       <div class="item-content">
                         <h6 class="content-title">Achintya Shankhdhar</h6>
                         <span class="content-more">
@@ -674,8 +676,8 @@
                     </div>
                   </a></div>
                 <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Akhil Vaid.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Akhil Vaid.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Akhil Vaid.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Akhil Vaid.webp">
                       <div class="item-content">
                         <h6 class="content-title">Akhil Vaid</h6>
                         <span class="content-more">
@@ -690,8 +692,8 @@
                       </div>
                     </div>
                   </a></div>
-                  <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Manan Madan.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Manan Madan.webp">
+                  <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Manan Madan.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;transform: rotate(180deg);"  alt="Item" data-src="img/team/Manan Madan.webp">
                       <div class="item-content">
                         <h6 class="content-title">Manan Madan &emsp; Software Lead 2020-21</h6>
                         <span class="content-more">
@@ -708,8 +710,8 @@
                       </div>
                     </div>
                   </a></div>
-                  <div class="single-item col-6 col-lg-4 brand design"><a class="portfolio-item" href="img/team/Devansh Jain.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Devansh Jain.webp">
+                  <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 brand design"><a class="portfolio-item" href="img/team/Devansh Jain.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Devansh Jain.webp">
                       <div class="item-content">
                         <h6 class="content-title">Devansh Jain &emsp; President 2018-19</h6>
                         <span class="content-more">
@@ -726,8 +728,8 @@
                     </div>
                   </a></div>
                                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Manpreet Kukreja.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Manpreet Kukreja.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Manpreet Kukreja.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Manpreet Kukreja.webp">
                       <div class="item-content">
                         <h6 class="content-title">Manpreet Kukreja Mech Team Leader 2019-20</h6>
                         <span class="content-more">
@@ -743,8 +745,8 @@
                     </div>
                   </a></div>
                                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/samyak uttam.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/samyak uttam.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/samyak uttam.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/samyak uttam.webp">
                       <div class="item-content">
                         <h6 class="content-title">Samyak Uttam</h6>
                         <span class="content-more">
@@ -762,8 +764,8 @@
                     </div>
                   </a></div>
                                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/harsh gupta.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/harsh gupta.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/harsh gupta.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/harsh gupta.webp">
                       <div class="item-content">
                         <h6 class="content-title">Harsh Gupta &emsp; Software Lead 2020-21</h6>
                         <span class="content-more">
@@ -779,8 +781,8 @@
                     </div>
                   </a></div>
                                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Milind Jain.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img   class="img-fluid lazy" alt="Item" src="img/team/Milind Jain.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Milind Jain.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img   class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Milind Jain.webp">
                       <div class="item-content">
                         <h6 class="content-title">Milind Jain &emsp; Mech Co-Lead 2020-21</h6>
                         <span class="content-more">
@@ -798,8 +800,8 @@
                     </div>
                   </a></div>
                                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Pranav Arora.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Pranav Arora.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Pranav Arora.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Pranav Arora.webp">
                       <div class="item-content">
                         <h6 class="content-title">Pranav Arora - Operation Team Lead - 2020-21</h6>
                         <span class="content-more">
@@ -815,8 +817,8 @@
                     </div>
                   </a></div>
                                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Gaurav Verma.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Gaurav Verma.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Gaurav Verma.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Gaurav Verma.webp">
                       <div class="item-content">
                         <h6 class="content-title">Gaurav Verma - Mech. Team Leader - 2020-21</h6>
                         <span class="content-more">
@@ -833,8 +835,8 @@
                     </div>
                   </a></div>
                                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/abhinav goel.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/abhinav goel.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/abhinav goel.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/abhinav goel.webp">
                       <div class="item-content">
                         <h6 class="content-title">Abhinav Goel</h6>
                         <span class="content-more">
@@ -851,8 +853,8 @@
                     </div>
                   </a></div>
                                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Anshita Goel.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Anshita Goel.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Anshita Goel.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Anshita Goel.webp">
                       <div class="item-content">
                         <h6 class="content-title">Anshita Goel &emsp; Outreach Lead 2020-21</h6>
                         <span class="content-more">
@@ -870,8 +872,8 @@
                     </div>
                   </a></div>
                                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 brand"><a class="portfolio-item" href="img/team/Astitwa Saxena.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Astitwa Saxena.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 brand"><a class="portfolio-item" href="img/team/Astitwa Saxena.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Astitwa Saxena.webp">
                       <div class="item-content">
                         <h6 class="content-title">Astitwa Saxena</h6>
                         <span class="content-more">
@@ -889,8 +891,8 @@
                     </div>
                   </a></div>
                                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Sanuj.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Sanuj.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Sanuj.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Sanuj.webp">
                       <div class="item-content">
                         <h6 class="content-title">Sanuj Kulshreshtha &emsp; President 2019-20</h6>
                         <span class="content-more">
@@ -907,8 +909,8 @@
                     </div>
                   </a></div>
                                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Sanyam Jain.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Sanyam Jain.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Sanyam Jain.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Sanyam Jain.webp">
                       <div class="item-content">
                         <h6 class="content-title">Sanyam Jain</h6>
                         <span class="content-more">
@@ -926,8 +928,8 @@
                     </div>
                   </a></div>
                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Saurabh Yewale.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Saurabh Yewale.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Saurabh Yewale.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Saurabh Yewale.webp">
                       <div class="item-content">
                         <h6 class="content-title">Saurabh Yewale</h6>
                         <span class="content-more">
@@ -945,8 +947,8 @@
                     </div>
                   </a></div>
                                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/shaonak dayal.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/shaonak dayal.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/shaonak dayal.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/shaonak dayal.webp">
                       <div class="item-content">
                         <h6 class="content-title">Shaonak Dayal</h6>
                         <span class="content-more">
@@ -964,8 +966,8 @@
                     </div>
                   </a></div>
                                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/shashu.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/shashu.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/shashu.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/shashu.webp">
                       <div class="item-content">
                         <h6 class="content-title">Shashank Vishwanath Adhikarla</h6>
                         <span class="content-more">
@@ -983,8 +985,8 @@
                     </div>
                   </a></div>
                                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Siddhant Banyal.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Siddhant Banyal.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Siddhant Banyal.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Siddhant Banyal.webp">
                       <div class="item-content">
                         <h6 class="content-title">Siddhant Banyal</h6>
                         <span class="content-more">
@@ -999,8 +1001,8 @@
                     </div>
                   </a></div>
                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Satvik Sharma.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Satvik Sharma.webp" style="height: 600px;">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Satvik Sharma.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;transform: rotate(-90deg);"  alt="Item" data-src="img/team/Satvik Sharma.webp" >
                       <div class="item-content">
                         <h6 class="content-title">Satvik Sharma &emsp; Electronics Lead 2020-21</h6>
                         <span class="content-more">
@@ -1018,8 +1020,8 @@
                     </div>
                   </a></div>
                                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Sj Singh.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Sj Singh.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Sj Singh.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Sj Singh.webp">
                       <div class="item-content">
                         <h6 class="content-title">Simranjeet Singh</h6>
                         <span class="content-more">
@@ -1037,8 +1039,8 @@
                     </div>
                   </a></div>
                                                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/swati garg.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/swati garg.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/swati garg.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/swati garg.webp">
                       <div class="item-content">
                         <h6 class="content-title">Swati Garg</h6>
                         <span class="content-more">
@@ -1056,8 +1058,8 @@
                     </div>
                   </a></div>
                                                   <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/ujjwal aggarwal.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/ujjwal aggarwal.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/ujjwal aggarwal.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/ujjwal aggarwal.webp">
                       <div class="item-content">
                         <h6 class="content-title">Ujjwal Aggarwal</h6>
                         <span class="content-more">
@@ -1073,8 +1075,8 @@
                     </div>
                   </a></div>
                                     <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Nipunika.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Nipunika.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/team/Nipunika.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Nipunika.webp">
                       <div class="item-content">
                         <h6 class="content-title">Nipunika</h6>
                         <span class="content-more">
@@ -1092,8 +1094,8 @@
                     </div>
                   </a></div>
                                                     <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Saurabh Yewale.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Kushagra Dixit.webp">
+                <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 design photos"><a class="portfolio-item" href="img/team/Kushagra Dixit.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Kushagra Dixit.webp">
                       <div class="item-content">
                         <h6 class="content-title">Kushagra Dixit</h6>
                         <span class="content-more">
@@ -1109,8 +1111,8 @@
                       </div>
                     </div>
                   </a></div>
-                  <div class="single-item col-6 col-lg-4 brand design"><a class="portfolio-item" href="img/team/Kunal Goel.webp" data-lightbox>
-                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" alt="Item" src="img/team/Kunal Goel.webp">
+                  <div style="height: 500px; width:500px;" class="single-item col-6 col-lg-4 brand design"><a class="portfolio-item" href="img/team/Kunal Goel.webp" data-lightbox>
+                    <div class="portfolio-wrapper"><img  class="img-fluid lazy" style="height: 400px; width:500px;"  alt="Item" data-src="img/team/Kunal Goel.webp">
                       <div class="item-content">
                         <h6 class="content-title">Kunal Goel &emsp; Electronics Lead - 2018-19</h6>
                         <span class="content-more">
@@ -1243,6 +1245,7 @@
 
     }
   </script>
+  <script src="lazy.js" defer></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/imagesloaded.pkgd.min.js"></script>
@@ -1257,5 +1260,6 @@
   <!-- Custom JS (Add your custom JS scripts to this file)-->
   <script src="js/custom.js"></script>
 </body>
+
 
 </html>
