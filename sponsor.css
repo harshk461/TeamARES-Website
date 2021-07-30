@@ -215,6 +215,9 @@ figure.snip0026 h2 span {
 
   grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
   grid-template-columns: 300px;
+
+  grid-row-gap: 60px;
+
 }
 
 
