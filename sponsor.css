@@ -203,7 +203,9 @@ figure.snip0026 h2 span {
 .grid{
   /* margin-left: 45px; */
   display: grid;
+  justify-items: center;
 
+  align-items:center;
   grid-template-areas:
     'fig1'
     'fig2'
@@ -213,12 +215,19 @@ figure.snip0026 h2 span {
     'fig6'
     'fig7';
 
-  grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
-  grid-template-columns: 300px;
+  grid-template-rows: 250px 250px 250px 250px 250px 250px 250px;
+  grid-template-columns: 250px;
 
   grid-row-gap: 60px;
-
 }
+  .name_logo{
+    width: 250px !important;
+    height: 50px !important;
+    /* display: flex !important; */
+    align-items: center !important;
+  }
+  
+
 
 
 .fig1{
@@ -277,6 +286,9 @@ body {
 @media only screen and (min-width: 1280px) {
 .grid{
     display: grid;
+    /* align-items: center; */
+    justify-items: center;
+
   grid-template-areas:
     'fig1 fig2 fig3'
     'fig4 fig5 fig6'
@@ -334,7 +346,4 @@ body {
   
 }
 
-.name_logo{
-  width: 60%;
-}
 }
