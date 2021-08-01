@@ -395,7 +395,7 @@ body {
       'fig1 fig2'
       'fig3 fig4'
       'fig5 fig6'
-      'fig7 .';
+      'fig7 fig7';
   
     grid-template-rows: 200px 200px 200px 200px;
     grid-template-columns: 200px 200px;
@@ -437,8 +437,5 @@ body {
   }
   .fig7{
     grid-area: fig7;
-    /* justify-content: center; */
-    /* top: 100px; */
-    
   }
 }
