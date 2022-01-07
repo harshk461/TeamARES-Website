@@ -51,7 +51,7 @@ function mySubmit() {
   var name = inputs.name.value;
   var text = textArea.value;
   var data = {
-    "access_token": "q43pbgxk3itn51bqholve53e"
+    "access_token": "w5llah6rbha5y34tgjc3c30x"
   };
   data['subject'] = subject;
   data['text'] = "From: " + name + " Email: " + email + " " + text;
