@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&amp;display=swap" rel="stylesheet">
   <!-- CSS vendors-->
   <link rel="stylesheet" href="css/bootstrap-custom.css">
+  <link rel="stylesheet" href="waterfall.css">
   <link rel="stylesheet" href="css/ionicons.min.css">
   <link rel="stylesheet" href="css/tiny-slider.css">
   <link rel="stylesheet" href="css/lity.min.css">
@@ -456,6 +457,31 @@
                 </div>
               </div>
             </div>
+            
+            
+            <div id="instafeed-container" style="display:none">
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="section-heading page-heading">
+                  <h2 class="section-title">Our Instagram Feed</h2>
+                  <div class="animated-bar"></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-left: 20%;">
+              <section id="waterfall">
+  
+              </section>
+            </div>
+            <br>
+            <br>
+
+
+  
+	
             <!-- Video section-->
             <div class="video-section single-section">
               <div class="row align-items-center">
@@ -624,14 +650,14 @@
                 <!-- Contact form-->
                 <br>
                 <div class="col-12 col-lg-7">
-                  <form class="contact-form" id="contact-form" action="php/contact.php">
+                  <form class="contact-form" id="contact-form" action='#'>
                     <h4 class="content-title">Wanna Join or Support our Team? Message Us!</h4>
                     <div class="row">
                       <div class="col-12 col-md-6 form-group"><input class="form-control" id="contact-name" type="text" name="name" placeholder="Name" required=""></div>
                       <div class="col-12 col-md-6 form-group"><input class="form-control" id="contact-email" type="email" name="email" placeholder="Email" required=""></div>
                       <div class="col-12 form-group"><input class="form-control" id="contact-subject" type="text" name="subject" placeholder="Subject" required=""></div>
                       <div class="col-12 form-group form-message"><textarea class="form-control" id="contact-message" name="message" placeholder="Message" rows="5" required=""></textarea></div>
-                      <div class="col-12 form-submit"><button class="btn button-main button-scheme" id="contact-submit" type="submit">Send Message</button>
+                      <div class="col-12 form-submit"><button class="btn button-main button-scheme" id="contact-submit" onclick="mySubmit()">Send Message</button>
                         <p class="contact-feedback"></p>
                       </div>
                     </div>
@@ -662,14 +688,14 @@
                         <div class="media align-items-center"><span class="info-icon"><i class="icon ion-md-call"></i></span>
                           <div class="media-body info-details">
 
-                            <h6 class="info-type">Call Us</h6><span class="info-value"><a href="tel:+441632967704">Arjun Singh - +91 9013121103<br> Satvik Sharma - +91 9205008573</a></span>
+                            <h6 class="info-type">Call Us</h6><span class="info-value"><a href="tel:+919013121103">Arjun Singh - +91 9013121103<br> Satvik Sharma - +91 9205008573</a></span>
                           </div>
                         </div>
                       </li>
                       <li>
                         <div class="media align-items-center"><span class="info-icon"><i class="icon ion-md-send"></i></span>
                           <div class="media-body info-details">
-                            <h6 class="info-type">Email Us</h6><span class="info-value"><a href="mailto:emma@example.com">teamaresnsit@gmail.com</a></span>
+                            <h6 class="info-type">Email Us</h6><span class="info-value"><a href="mailto:teamaresnsit@gmail.com">teamaresnsit@gmail.com</a></span>
                           </div>
                         </div>
                       </li>
@@ -697,6 +723,30 @@
 
     }
   </script>
+  <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	<script type="text/javascript">
+  var main=document.getElementById('waterfall');
+	var userFeed = new Instafeed({
+		get: 'user',
+    resolution: 'high_resolution',
+    target:'instafeed-container',
+    transform:function(item){
+      var div=document.createElement('div');
+      div.className="img";
+      var text=document.createElement('a');
+      text.href=item.link;
+      var img=document.createElement('img');
+      img.src=item.image;
+      text.appendChild(img);
+      div.appendChild(text);
+      main.appendChild(div);
+
+    }
+    ,
+		accessToken: 'IGQVJVWGNLS21wcEJZARlJDMmNMeGRsZAVR6RVd1SmRlQkpZAOXFqUmxHQUdUVlBYbUd6dzF0WS1BaVAyanVHN1lNd2lQdnpucDRtcUdFRW8xSFd2UEQxZAFVjTXptSUFYWnhpREVYTE5kWkdzSHh1THVfcgZDZD'
+	});
+	userFeed.run();
+	</script>
   <script src="lazy.js" defer></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>

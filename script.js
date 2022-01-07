@@ -32,3 +32,35 @@ $.get("https://opensheet.elk.sh/1o4WOXewxr_uh70EzAjx9O7JwM3E7EUDrZrR0HrL3Src/1",
 });
 
 
+function onSuccess() {
+  // remove this to avoid redirect
+  window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+}
+
+function onError(error) {
+  // remove this to avoid redirect
+  window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+}
+
+function mySubmit() {
+  var form = document.getElementById('contact-form');
+  var inputs = form.getElementsByTagName('input');
+  var textArea = document.getElementById('contact-message');
+  var email = inputs.email.value;
+  var subject = inputs.subject.value;
+  var name = inputs.name.value;
+  var text = textArea.value;
+  var data = {
+    "access_token": "q43pbgxk3itn51bqholve53e"
+  };
+  data['subject'] = subject;
+  data['text'] = "From: " + name + " Email: " + email + " " + text;
+  $.post('https://postmail.invotes.com/send',
+    data,
+    onSuccess
+  ).fail(onError);
+
+  return false;
+}
+
+
