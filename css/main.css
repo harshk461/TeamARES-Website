@@ -21,6 +21,9 @@
  */
 /*----------- Globals -----------*/
 /* Disable outline */
+.morpheus-align-centre{
+  margin: auto;
+}
 :focus {
   outline: none;
 }
