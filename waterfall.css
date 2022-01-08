@@ -6,7 +6,7 @@ section {
 }
  section .img {
 	 position: absolute;
-	 width: 200px;
+	 width: 25vh;
 	 transform: scale3d(0.5, 0.5, 1);
 	 border-radius: 9px;
 	 animation: mbt 3s 0s linear infinite both;
@@ -47,134 +47,134 @@ section {
 }
  @keyframes mbt {
 	 0% {
-		 transform: translateY(-200px);
+		 transform: translateY(-20vh);
 	}
 	 100% {
 		 transform: translateY(100vh);
 	}
 }
  section .img:nth-child(1) {
-	 left: calc(( 1 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 1 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(2) {
-	 left: calc(( 2 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 2 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(3) {
-	 left: calc(( 3 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 3 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(4) {
-	 left: calc(( 4 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 4 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(5) {
-	 left: calc(( 5 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 5 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(6) {
-	 left: calc(( 6 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 6 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(7) {
-	 left: calc(( 7 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 7 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(8) {
-	 left: calc(( 8 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 8 - 1 ) * ( 100% - 20vh) / (41 - 1));
 }
  section .img:nth-child(9) {
-	 left: calc(( 9 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 9 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(10) {
-	 left: calc(( 10 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 10 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(11) {
-	 left: calc(( 11 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 11 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(12) {
-	 left: calc(( 12 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 12 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(13) {
-	 left: calc(( 13 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 13 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(14) {
-	 left: calc(( 14 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 14 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(15) {
-	 left: calc(( 15 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 15 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(16) {
-	 left: calc(( 16 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 16 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(17) {
-	 left: calc(( 17 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 17 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(18) {
-	 left: calc(( 18 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 18 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(19) {
-	 left: calc(( 19 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 19 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(20) {
-	 left: calc(( 20 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 20 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(21) {
-	 left: calc(( 21 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 21 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(22) {
-	 left: calc(( 22 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 22 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(23) {
-	 left: calc(( 23 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 23 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(24) {
-	 left: calc(( 24 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 24 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(25) {
-	 left: calc(( 25 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 25 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(26) {
-	 left: calc(( 26 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 26 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(27) {
-	 left: calc(( 27 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 27 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(28) {
-	 left: calc(( 28 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 28 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(29) {
-	 left: calc(( 29 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 29 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(30) {
-	 left: calc(( 30 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 30 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(31) {
-	 left: calc(( 31 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 31 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(32) {
-	 left: calc(( 32 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 32 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(33) {
-	 left: calc(( 33 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 33 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(34) {
-	 left: calc(( 34 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 34 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(35) {
-	 left: calc(( 35 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 35 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(36) {
-	 left: calc(( 36 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 36 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(37) {
-	 left: calc(( 37 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 37 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(38) {
-	 left: calc(( 38 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 38 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(39) {
-	 left: calc(( 39 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 39 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(40) {
-	 left: calc(( 40 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 40 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(41) {
-	 left: calc(( 41 - 1 ) * ( 100% - 200px ) / (41 - 1));
+	 left: calc(( 41 - 1 ) * ( 100% - 20vh ) / (41 - 1));
 }
  section .img:nth-child(1) {
 	 animation-delay: 1s;
