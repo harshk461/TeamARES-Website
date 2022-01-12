@@ -1,31 +1,27 @@
 $.get("https://opensheet.elk.sh/1o4WOXewxr_uh70EzAjx9O7JwM3E7EUDrZrR0HrL3Src/1", function (data) {
   for (var i = 0; i < data.length; i++) {
     var outerdiv = document.createElement("div");
-    outerdiv.style = "height: 500px; width: 500px;"
-    outerdiv.className = "single-item col-6 col-lg-4 " + data[i].year
-    var anchor = document.createElement('a');
-    anchor.className = "portfolio-item";
-    anchor.href = data[i].linkedin;
-    var pr = document.createElement('div');
-    pr.className = "portfolio-wrapper";
+    outerdiv.className = "col-sm-6 col-lg-4 col-xl-3 " + data[i].year
+    var innerdiv1 = document.createElement('div');
+    innerdiv1.className = "single-person";
+    var innerdiv2 = document.createElement('div');
+    innerdiv2.className = "person-image";
     var img = document.createElement("img");
-    img.className = "img-fluid lazy"
-    img.style = "height: 400px; width: 500px;"
-    // var datasrc = document.createAttribute('data-src');
-    // datasrc.value = data[i].image;
-    // img.setAttributeNode(datasrc);
     img.src = data[i].image;
-    img.setAttribute('loading', 'lazy');
     var div3 = document.createElement('div');
-    div3.className = "item-content"
-    var finalDetails = document.createElement('h6');
-    finalDetails.className = "content-title"
-    finalDetails.innerHTML = data[i].firstname + " " + data[i].lastname + " &emsp; " + data[i].por
-    outerdiv.appendChild(anchor);
-    anchor.appendChild(pr);
-    pr.appendChild(img);
-    pr.appendChild(div3);
-    div3.appendChild(finalDetails);
+    div3.className = "person-info"
+    var name = document.createElement('h3');
+    name.className = "full-name"
+    name.innerHTML = data[i].firstname + " " + data[i].lastname;
+    var por = document.createElement('span');
+    por.className = "speciality";
+    por.innerHTML = data[i].por;
+    outerdiv.appendChild(innerdiv1);
+    innerdiv1.appendChild(innerdiv2);
+    innerdiv2.appendChild(img);
+    innerdiv1.appendChild(div3);
+    div3.appendChild(name);
+    div3.appendChild(por);
     $(outerdiv).appendTo('#portfolioList');
   }
 
