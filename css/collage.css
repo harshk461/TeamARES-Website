@@ -1,90 +1,38 @@
-.con {
-	position: relative;
-	 display: flex;
-	 height: 100%;
-	 align-items: center;
-	 justify-content: center;
-	 transform: scale(0.92);
+.rw {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
- .two.two {
-	 transform: scaleX(-1);
-	 border-right: 14px solid gold;
-	 background: url(../collage/6.jpeg) -40px 150px / 77% no-repeat;
+
+/* Create four equal columns that sits next to each other */
+.abc {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
 }
- .two.two .bottom {
-	 background: url(../collage/4.jpeg) 222px -111px / 66% no-repeat;
+
+.abc img {
+    margin-top: 8px;
+    vertical-align: middle;
 }
- .two.two .bottom::after {
-	 background: url(../collage/3.jpeg) center/156% no-repeat;
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .abc {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
 }
- .two.two .middle {
-	 background: url(../collage/7.jpeg) -30px -20px /cover no-repeat;
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .abc {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
 }
- .two.two .top {
-	 background: url(../collage/5.jpeg) right / 57% no-repeat;
-}
- .two.two .top::after {
-	 background: url(../collage/1.jpeg) center / 100% no-repeat;
-}
- .wrap {
-	 width: 600px;
-	 height: 650px;
-	 position: relative;
-	 overflow: hidden;
-	 background: url(../collage/2.jpeg) -300px -100px / cover no-repeat;
-}
- .top {
-	 width: 660px;
-	 height: 270px;
-	 position: absolute;
-	 z-index: 2;
-	 -webkit-transform: rotate(-10deg);
-	 transform: rotate(-10deg);
-	 top: -90px;
-	 left: -66px;
-	 border: 14px solid gold;
-	 overflow: hidden;
-	 background: url(../collage/8.jpeg) 250px center / 80% no-repeat;
-}
- .top::after {
-	 content: " ";
-	 display: block;
-	 width: 400px;
-	 height: 350px;
-	 border: 14px solid gold;
-	 transform: rotate(-5deg);
-	 background: url(../collage/9.jpeg) -50px 0px / cover no-repeat;
-}
- .middle {
-	 width: 320px;
-	 height: 400px;
-	 position: absolute;
-	 right: -110px;
-	 top: 132px;
-	 z-index: 1;
-	 transform: rotate(8deg);
-	 border: 14px solid gold;
-	 background: url(../collage/10.jpeg) -100px top / cover no-repeat;
-}
- .bottom {
-	 z-index: 2;
-	 width: 700px;
-	 height: 270px;
-	 position: absolute;
-	 transform: rotate(5deg);
-	 bottom: -90px;
-	 right: -80px;
-	 border: 14px solid gold;
-	 overflow: hidden;
-	 background: url(../collage/13.jpg) 150px -120px/ 80% no-repeat;
-}
- .bottom::after {
-	 content: " ";
-	 display: block;
-	 width: 300px;
-	 height: 300px;
-	 border: 14px solid gold;
-	 transform: translate(-70px, -65px) rotate(17deg);
-	 background: url(../collage/11.jpeg) 50px -40px / cover no-repeat;
-}
- 

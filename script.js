@@ -1,7 +1,7 @@
 $.get("https://opensheet.elk.sh/1o4WOXewxr_uh70EzAjx9O7JwM3E7EUDrZrR0HrL3Src/1", function (data) {
   for (var i = 0; i < data.length; i++) {
     var outerdiv = document.createElement("div");
-    outerdiv.className = "col-sm-6 col-lg-4 col-xl-3 " + data[i].year
+    outerdiv.className = "outdiv col-sm-6 col-lg-4 col-xl-3 " + data[i].year
     var innerdiv1 = document.createElement('div');
     innerdiv1.className = "single-person";
     var innerdiv2 = document.createElement('div');
@@ -58,5 +58,6 @@ function mySubmit() {
 
   return false;
 }
+
 
 

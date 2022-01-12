@@ -210,3 +210,7 @@ p{
 	margin-left: 1vw;
 	margin-right: 1vw;
 }
+
+.show {
+  display: block;
+}
