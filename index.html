@@ -1017,30 +1017,53 @@
               <div class="portfolio-section single-section">
                 <div class="row">
                   <!-- Filter nav-->
-                  <div class="col-12">
-                    <ul
-                      class="list-inline filter-control"
-                      role="group"
-                      aria-label="Filter Control"
-                      id="myBtnContainer"
-                    >
-                      <li class="btn active" onclick="filterSelection('all')">
+                  <ul class="filters">
+                    <li class="filters__item">
+                      <div
+                        onclick="f('all')"
+                        class="filters__btn js-filter"
+                        data-color="all"
+                      >
                         All Team Members
-                      </li>
-                      <li class="btn" onclick="filterSelection('alpha')">
+                      </div>
+                    </li>
+                    <li class="filters__item">
+                      <div
+                        onclick="f('alpha')"
+                        class="filters__btn js-filter"
+                        data-color="alpha"
+                      >
                         2021
-                      </li>
-                      <li class="btn" onclick="filterSelection('beta')">
+                      </div>
+                    </li>
+                    <li class="filters__item">
+                      <div
+                        onclick="f('beta')"
+                        class="filters__btn js-filter"
+                        data-color="beta"
+                      >
                         2020
-                      </li>
-                      <li class="btn" onclick="filterSelection('gamma')">
+                      </div>
+                    </li>
+                    <li class="filters__item">
+                      <div
+                        onclick="f('gamma')"
+                        class="filters__btn js-filter"
+                        data-color="gamma"
+                      >
                         2019
-                      </li>
-                      <li class="btn" onclick="filterSelection('delta')">
+                      </div>
+                    </li>
+                    <li class="filters__item">
+                      <div
+                        onclick="f('delta')"
+                        class="filters__btn js-filter"
+                        data-color="delta"
+                      >
                         2018
-                      </li>
-                    </ul>
-                  </div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
                 <div class="section-team">
                   <div class="container">
@@ -1549,6 +1572,8 @@
       <script src="js/main.js"></script>
       <!-- Custom JS (Add your custom JS scripts to this file)-->
       <script src="js/custom.js"></script>
+      <script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script>
+      <script src="http://code.jquery.com/jquery-migrate-1.0.0rc1.js"></script>
     </div>
   </body>
 </html>

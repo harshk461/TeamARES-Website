@@ -1,7 +1,12 @@
+// For Teams Page
+
 $.get("https://opensheet.elk.sh/1o4WOXewxr_uh70EzAjx9O7JwM3E7EUDrZrR0HrL3Src/1", function (data) {
   for (var i = 0; i < data.length; i++) {
     var outerdiv = document.createElement("div");
-    outerdiv.className = "outdiv col-sm-6 col-lg-4 col-xl-3 " + data[i].year
+    var dataColour = document.createAttribute('data-color');
+    dataColour.value = data[i].year;
+    outerdiv.setAttributeNode(dataColour);
+    outerdiv.className = "outdiv col-sm-6 col-lg-4 col-xl-3";
     var innerdiv1 = document.createElement('div');
     innerdiv1.className = "single-person";
     var innerdiv2 = document.createElement('div');
@@ -27,6 +32,8 @@ $.get("https://opensheet.elk.sh/1o4WOXewxr_uh70EzAjx9O7JwM3E7EUDrZrR0HrL3Src/1",
 
 });
 
+
+//For Contact Us
 
 function onSuccess() {
   // remove this to avoid redirect
@@ -61,3 +68,22 @@ function mySubmit() {
 
 
 
+// For Team Filter
+function f(color) {
+  abc = document.getElementsByClassName('outdiv');
+  if (color == 'all') {
+    abc.forEach(element => {
+      element.style.display = 'inline-block';
+    });
+  }
+  else {
+    abc.forEach(element => {
+      element.style.display = 'none'
+      var c = element.getAttribute('data-color');
+      if (c == color) {
+        element.style.display = 'inline-block';
+      }
+
+    });
+  }
+};

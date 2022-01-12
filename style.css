@@ -214,3 +214,20 @@ p{
 .show {
   display: block;
 }
+
+
+.hide {
+  display: none;
+}
+
+.filters__item {
+  display: inline-block;
+}
+
+
+.filters__btn {
+  background: gray;
+  color: white;
+  display: inline-block;
+  padding: 1em;
+}
