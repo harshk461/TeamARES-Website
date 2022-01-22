@@ -19,15 +19,6 @@ const data = [{
 },
 {
   "year": "alpha",
-  "priority": "3",
-  "firstname": "Swaranjeet",
-  "lastname": "Singh",
-  "por": "Vice President (2021-2022)",
-  "image": "./team/swaranjeet.png",
-  "linkedin": "https://www.linkedin.com/in/swaranjeet-s-555118178"
-},
-{
-  "year": "alpha",
   "priority": "4",
   "firstname": "Vineet",
   "lastname": "Agarwal",
@@ -211,15 +202,6 @@ const data = [{
   "por": "Designing Head (2021-2022)",
   "image": "./team/Ujjwal_Design.png",
   "linkedin": "https://www.linkedin.com/in/ujjwal-joshi-348209214/"
-},
-{
-  "year": "alpha",
-  "priority": "25",
-  "firstname": "Shantanu",
-  "lastname": "Goyal",
-  "por": "Member (2021-2022)",
-  "image": "./team/shantanu_goyal.png",
-  "linkedin": "https://www.linkedin.com/in/shantanugoyal23"
 },
 {
   "year": "beta",
